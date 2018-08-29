@@ -5,6 +5,11 @@ import java.util.Scanner;
     */
 public class power {
 /* Fill the main function to print the number of 7's between 1 to n*/
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         final long x = scan.nextInt();
