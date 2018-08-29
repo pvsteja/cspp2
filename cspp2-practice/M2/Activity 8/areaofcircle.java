@@ -2,11 +2,12 @@ import java.util.Scanner;
 /**.
  * { item_description }
  */
-final class Areacircle {
+public final class Areaofcircle {
     /**.
      * Constructs the object.
      */
-    private areaofcircle() {
+    private Areaofcircle() {
+
     }
     /**
      *
