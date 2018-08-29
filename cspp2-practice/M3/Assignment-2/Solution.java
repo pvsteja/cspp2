@@ -37,10 +37,10 @@ public final class Solution {
      *
      * @return     { description_of_the_return_value }
      */
-    static int occurence(int a, int b, int n) {
+    static int occurence(final int a, final int b, final int n) {
     	int temp;
-    	int count =0;
-    	for (int i = 1; i <= n; i ++) {
+    	int count = 0;
+    	for (int i = 1; i <= n; i++) {
     		temp = i;
     		while (temp != 0) {
     			final int j = temp % a;
