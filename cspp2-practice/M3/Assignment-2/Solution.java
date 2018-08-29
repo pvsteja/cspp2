@@ -28,7 +28,7 @@ public final class Solution {
         occurence(a, b, n);
         System.out.println(occurence(a, b, n));
     }
-    /**
+    /**.
      * { function_description }
      *
      * @param      a     { parameter_description }
@@ -53,3 +53,5 @@ public final class Solution {
         return count;
     }
 }
+
+
