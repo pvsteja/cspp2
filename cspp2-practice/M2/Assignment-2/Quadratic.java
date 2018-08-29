@@ -10,7 +10,6 @@ public class Quadratic {
     double c = scan.nextDouble();
     Quadratic(a, b, c);
   }
-  
   /*
   Need to write the rootsOfQuadraticEquation function and print the output.
   */
@@ -21,7 +20,4 @@ public class Quadratic {
       System.out.println(r1 + " " + r2);
 
     }
-     
-
-
 }
