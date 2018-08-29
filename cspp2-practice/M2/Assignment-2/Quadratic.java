@@ -1,5 +1,8 @@
 import java.util.Scanner;
-public class Quadratic {
+public final class Quadratic {
+  private Quadratic() {
+
+  }
   /*
   Do not modify this main function.
   */
@@ -8,12 +11,12 @@ public class Quadratic {
     final double a = scan.nextDouble();
     final double b = scan.nextDouble();
     final double c = scan.nextDouble();
-    Quadratic(a, b, c);
+    cons(a, b, c);
   }
   /*
   Need to write the rootsOfQuadraticEquation function and print the output.
   */
-    static void Quadratic(final double a, final double b, final double c) {
+    static void cons(final double a, final double b, final double c) {
 
       final int r = 4;
       double cons =  Math.sqrt((b * b) - (r * a * c));
