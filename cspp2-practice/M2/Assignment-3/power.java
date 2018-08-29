@@ -12,14 +12,14 @@ public class power {
         System.out.println(power(x, y));
     }
         /**
-         * 
+         *
          *
          * @param      x     { parameter_description }
          * @param      y     { parameter_description }
          *
          * @return     { description_of_the_return_value }
          */
-        static long power(final long x, final long y){
+        static long power(final long x, final long y) {
             if (y == 0) {
                 return 1;
             }
