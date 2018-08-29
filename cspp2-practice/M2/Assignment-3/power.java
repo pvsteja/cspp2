@@ -1,8 +1,8 @@
 
 import java.util.Scanner;
-/*
-    Do not modify this main function.
-    */
+/**
+ * Class for power.
+ */
 public class power {
 /* Fill the main function to print the number of 7's between 1 to n*/
     /**
