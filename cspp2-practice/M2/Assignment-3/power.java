@@ -25,14 +25,15 @@ public class power {
          * @return     { description_of_the_return_value }
          */
         static long power(final long x, final long y) {
-            if (y == 0) 
+            if (y == 0) {
                 return 1;
-            
-            else if (y == 1)
+            }
+            else if (y == 1) {
                 return x;
-            else 
+            }
+            else {
                 return (x * power(x, (y - 1)));
-            
+            }
 
         }
 }
