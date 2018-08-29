@@ -1,4 +1,7 @@
 import java.util.Scanner;
+/**
+ * { item_description }
+ */
 public final class Quadratic {
   /**.
    * Constructs the object.
@@ -9,7 +12,7 @@ public final class Quadratic {
   /*
   Do not modify this main function.
   */
-  /**
+  /**.
    * { function_description }
    *
    * @param      args  The arguments
@@ -24,6 +27,13 @@ public final class Quadratic {
   /*
   Need to write the rootsOfQuadraticEquation function and print the output.
   */
+    /**
+     * { function_description }
+     *
+     * @param      a     { parameter_description }
+     * @param      b     { parameter_description }
+     * @param      c     { parameter_description }
+     */
     static void cons(final double a, final double b, final double c) {
 
       final int r = 4;
