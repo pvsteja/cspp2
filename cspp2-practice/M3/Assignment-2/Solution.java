@@ -3,17 +3,40 @@ import java.util.Scanner;
 /*
 	Do not modify this main function.
 	*/
-public class Solution {
-/* Fill the main function to print the number of 7's between 1 to n*/
-    public static void main(String[] args) {
+/**.
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
 
-        Scanner s=new Scanner(System.in);      
+	}
+/* Fill the main function to print the number of 7's between 1 to n*/
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+
+        Scanner s = new Scanner(System.in);      
         final int n = s.nextInt();
         final int a = 10;
         final int b = 7;
         occurence(a, b, n);
         System.out.println(occurence(a, b, n));
     }
+    /**
+     * { function_description }
+     *
+     * @param      a     { parameter_description }
+     * @param      b     { parameter_description }
+     * @param      n     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     static int occurence(int a, int b, int n) {
     	int temp;
     	int count =0;
