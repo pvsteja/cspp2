@@ -1,12 +1,20 @@
 import java.util.Scanner;
 public final class Quadratic {
+  /**.
+   * Constructs the object.
+   */
   private Quadratic() {
 
   }
   /*
   Do not modify this main function.
   */
-  public static void main(String[] args) {
+  /**
+   * { function_description }
+   *
+   * @param      args  The arguments
+   */
+  public static void main(final String[] args) {
     Scanner scan = new Scanner(System.in);
     final double a = scan.nextDouble();
     final double b = scan.nextDouble();
