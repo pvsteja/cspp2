@@ -5,9 +5,9 @@ public class Quadratic {
   */
     public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
-    double a = scan.nextDouble();
-    double b = scan.nextDouble();
-    double c = scan.nextDouble();
+    final double a = scan.nextDouble();
+    final double b = scan.nextDouble();
+    final double c = scan.nextDouble();
     Quadratic(a, b, c);
   }
   /*
