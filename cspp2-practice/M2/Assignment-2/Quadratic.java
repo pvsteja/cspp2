@@ -15,10 +15,10 @@ public class Quadratic {
   */
     static void Quadratic(final double a, final double b, final double c) {
 
-      double cons =  Math.sqrt((b * b) - (4 * a *c));
+      final int r = 4;
+      double cons =  Math.sqrt((b * b) - (r * a * c));
       double r1 = (-1 * b + cons) / (2 * a);
       double r2 = (-1 * b - cons) / (2 * a);
       System.out.println(r1 + " " + r2);
     }
 }
- 
