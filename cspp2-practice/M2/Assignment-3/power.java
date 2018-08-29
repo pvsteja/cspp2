@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-/**
+/**.
  * Class for power.
  */
 public class power {
@@ -16,7 +16,7 @@ public class power {
         final long y = scan.nextInt();
         System.out.println(power(x, y));
     }
-        /**
+        /**.
          *
          *
          * @param      x     { parameter_description }
