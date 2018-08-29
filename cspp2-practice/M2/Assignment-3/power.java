@@ -5,6 +5,9 @@ import java.util.Scanner;
  */
 public final class Power {
     /* Fill the main function to print the number of 7's between 1 to n*/
+    /**
+     * Constructs the object.
+     */
     private Power() {
 
     }
