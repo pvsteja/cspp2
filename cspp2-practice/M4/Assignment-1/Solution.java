@@ -2,7 +2,13 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
     /*
     Fill this main function to print maximum of given array
     */
@@ -11,8 +17,7 @@ public class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(final String[] args)
-    {
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] a;
@@ -30,3 +35,5 @@ public class Solution {
         System.out.println(largest);
     }
 }
+
+
