@@ -12,7 +12,7 @@ public final class Gcd {
     private Gcd() {
 
     }
-    /**
+    /**.
      * { function_description }
      *
      * @param      args  The arguments
@@ -36,4 +36,6 @@ public final class Gcd {
     Need to write the gcd function and print the output.
     */
 }
+
+
 
