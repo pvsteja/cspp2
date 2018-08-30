@@ -5,11 +5,11 @@ import java.util.Scanner;
 /**
  * Class for gcd.
  */
-public class gcd {
+public final class Gcd {
     /**
      * Constructs the object.
      */
-    private gcd() {
+    private Gcd() {
 
     }
     /**
