@@ -4,9 +4,13 @@ import java.util.Scanner;
  */
 public final class Solution {
   private Solution() {
-    
   }
 
+  /**
+   * { function_description }
+   *
+   * @param      args  The arguments
+   */
   public static void main(final String[] args) {
       int[][] arr1;
       int[][] arr2;
