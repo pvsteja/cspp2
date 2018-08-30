@@ -1,14 +1,26 @@
-
 import java.util.Scanner;
 /*
-	Do not modify this main function.
-	*/
+    Do not modify this main function.
+    */
+/**
+ * Class for gcd.
+ */
 public class gcd {
+    /**
+     * Constructs the object.
+     */
+    private gcd() {
 
-    public static void main(String[] args) {
+    }
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
 
-        Scanner s=new Scanner(System.in);
-        int gcd = 0;      
+        Scanner s = new Scanner(System.in);
+        int gcd = 0;
         int n1 = s.nextInt();
         int n2 = s.nextInt();
         for (int i = 1; i <= n1; i++) {
@@ -21,6 +33,7 @@ public class gcd {
         System.out.println(gcd);
     }
     /*
-	Need to write the gcd function and print the output.
-	*/
+    Need to write the gcd function and print the output.
+    */
 }
+
