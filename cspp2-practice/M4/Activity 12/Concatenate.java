@@ -9,14 +9,16 @@ public final class Concatenate {
     private Concatenate() {
 
     }
-    /**.
-     * { function_description }
+    /**
+     * . { function_description }
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        String str = sc.next();
-        System.out.println("Hello " + str + "!");
+        String str = "Hello";
+        String con = sc.next();
+        String name = str.concat(con);
+        System.out.println(name + " " +  "!");
     }
 }
