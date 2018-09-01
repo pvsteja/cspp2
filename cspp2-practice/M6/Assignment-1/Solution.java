@@ -20,7 +20,7 @@ public final class Solution {
     static void oddComposites(final int n) {
         int count = 0;
         int i = 0;
-        for (i = 3; i < n; i++) {
+        for (i = 0; i < n; i++) {
             int factors = 0;
             if ( i % 2 != 0 ) {
                 count = 0;
