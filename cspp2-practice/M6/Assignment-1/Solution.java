@@ -25,16 +25,16 @@ public final class Solution {
             if ( i % 2 != 0 ) {
                 count = 0;
             }else {
-                for (int j = 3; j < i; j++) {
-                if (j%i == 0) {
+                for (int j = 1; j < i; j++) {
+                if (j % i == 0) {
                     count++;
                 }
 
             }
 
-                if (factors > 2){
-                    System.out.println(i);
-                }
+            if (factors > 2){
+                System.out.println(i);
+            }
             }
         }
 ;
