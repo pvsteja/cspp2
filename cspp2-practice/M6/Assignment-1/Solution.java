@@ -21,7 +21,7 @@ public final class Solution {
         int count = 0;
         for (int i = 2; i < n; i++) {
             int factors = 0;
-            if ( i % 2 == 0 ) {
+            if (i % 2 == 0) {
                 count = 0;
                 for (int j = 1; j < i; j++) {
                 if (j % i == 0) {
@@ -35,7 +35,6 @@ public final class Solution {
             }
             }
         }
-;
     }
     /**
     * main method as driver program.
@@ -47,4 +46,3 @@ public final class Solution {
         oddComposites(n);
     }
 }
-
