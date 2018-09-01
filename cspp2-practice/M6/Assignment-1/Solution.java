@@ -47,7 +47,6 @@ public final class Solution {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
         oddComposites(n);
-        System.out.println();
     }
 }
 
