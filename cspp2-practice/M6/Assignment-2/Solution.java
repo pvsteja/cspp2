@@ -23,22 +23,22 @@ final class Solution {
      * @return     Matrix of the rounded elements
      */
     static int[][] roundHundred(final int[][] a, final int rows, final int columns) {
-        int size = 11, m = 100, mid = 50;
-        int[] mul = new int[size];
-        for( int i = 0; i < size; i++) {
-            mul[i] = i * m;
+        final int size = 11, m = 100, mid = 50;
+        final int[] mat = new int[size];
+        for (int i = 0; i < size; i++) {
+            mat[i] = i * m;
         }
         int temp = 0;
         for (int j = 0; j < rows; j++) {
             for (int k = 0; k < rows; k++) {
-                for (int i = 0; i < mul.length; i++) {
-                    temp = Math.round(a[j][k] - mul[i]);
+                for (int i = 0; i < mat.length; i++) {
+                    temp = Math.round(a[j][k] - mat[i]);
                     if (temp < mid) {
-                        a[j][k] = mul[i];
+                        a[j][k] = mat[i];
                         break;
                     }
                     else if (temp == mid) {
-                        a[j][k] = mul[i + 1];
+                        a[j][k] = mat[i + 1];
                         break;
                     }
                 }
