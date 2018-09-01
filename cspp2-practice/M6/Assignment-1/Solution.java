@@ -21,6 +21,7 @@ public final class Solution {
         int count = 0;
         int i = 0;
         for (i = 3; i < n; i++) {
+            int factors = 0;
             if ( i % 2 != 0 ) {
                 count = 0;
             }else {
@@ -31,7 +32,7 @@ public final class Solution {
 
             }
 
-                if (count > 2){
+                if (factors > 2){
                     System.out.println(i);
                 }
             }
