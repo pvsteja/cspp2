@@ -22,7 +22,8 @@ final class Solution {
      *
      * @return     Matrix of the rounded elements
      */
-    static int[][] roundHundred(final int[][] a, final int rows, final int columns) {
+    static int[][] roundHundred(final int[][] a,
+        final int rows, final int columns) {
         final int size = 11, m = 100, mid = 50;
         final int[] mat = new int[size];
         for (int i = 0; i < size; i++) {
