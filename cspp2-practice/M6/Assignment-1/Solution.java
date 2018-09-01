@@ -23,11 +23,10 @@ public final class Solution {
             int factors = 0;
             if ( i % 2 == 0 ) {
                 count = 0;
-            }else {
                 for (int j = 1; j < i; j++) {
                 if (j % i == 0) {
                     count++;
-                }
+            }
 
             }
 
