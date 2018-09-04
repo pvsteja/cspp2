@@ -1,6 +1,5 @@
-
 /**
- *
+ *@author : pvsteja.
  */
 import java.util.Scanner;
 /**
@@ -51,4 +50,3 @@ final class Solution {
         System.out.println(i.validateData());
     }
 }
-
