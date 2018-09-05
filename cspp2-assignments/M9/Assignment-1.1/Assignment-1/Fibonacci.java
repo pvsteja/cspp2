@@ -59,7 +59,7 @@ public final class Fibonacci {
         return list;
     }
 
-    /**
+    /**.
      * { function_description }
      *
      * @param      args  The arguments
