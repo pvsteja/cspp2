@@ -43,7 +43,7 @@ public final class Fibonacci {
      */
     public static List fib(final int n) {
         // todo - complete this method
-        List list = new List();
+        List list = new List(n);
         int i;
         int x = 0;
         int sum = 0;
