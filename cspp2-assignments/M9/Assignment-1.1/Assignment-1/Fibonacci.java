@@ -20,7 +20,7 @@ import java.util.Scanner;
 /**.
  * Class for fibonacci.
  */
-public class Fibonacci {
+public final class Fibonacci {
     /**
      * Constructs the object.
      */
@@ -34,23 +34,23 @@ public class Fibonacci {
      *
      * Look for the hint.txt if some of the testcases fail.
      */
-    /**
+    /**.
      * { function_description }
      *
      * @param      n     { parameter_description }
      *
      * @return     { description_of_the_return_value }
      */
-    public static List fib(int n) {
+    public static List fib(final int n) {
         // todo - complete this method
-        List list = new List ();
+        List list = new List();
         int i;
         int x = 0;
         int sum = 0;
         list.add(x);
         int y = 1;
         list.add(y);
-        for (i = 3; i <= n; i++) {
+        for (i = 2 + 1; i <= n; i++) {
             sum = x + y;
             list.add(sum);
             x = y;
