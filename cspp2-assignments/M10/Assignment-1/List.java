@@ -291,34 +291,37 @@ public class List {
         }
         return -1;
     }
-   /*Inserts all the elements of specified int 
+   /*Inserts all the elements of specified int
     array to the end of list*/
-    /**
+    /**.
      * { item_description }
      */
-    public void addAll(int items[]) {
+    public void addAll(final int[] items) {
         for (int i = 0; i < items.length; i++) {
             add(items[i]);
         }
     }
 
+    /**
+     * { function_description }
+     */
     void resize() {
         list = Arrays.copyOf(list, 2 * size);
     }
 
      /*
-        Inserts the specified element at the specified index 
+        Inserts the specified element at the specified index
     by moving all the elements to the right.
         The method returns void (nothing)
      */
-    /**
+    /**.
      * { function_description }
      *
      * @param      index  The index
      * @param      item   The item
      */
-    public void add(int index,int item) {
-        if(index >= 0) {
+    public void add(final int index, final int item) {
+        if (index >= 0) {
             for (int i = size; i > index; i--) {
                 list[i] = list[i - 1];
             }
@@ -331,16 +334,15 @@ public class List {
         }
 
     }
-    
     /* Returns the count of occurances of a given item in the list*/
-    /**
+    /**.
      * { function_description }
      *
      * @param      item  The item
      *
      * @return     { description_of_the_return_value }
      */
-    public int count(int item) {
+    public int count(final int item) {
         int count = 0;
         for (int i = 0; i < size; i++) {
             if (item == list[i]) {
@@ -350,7 +352,7 @@ public class List {
         return count;
     }
 
-    /**
+    /**.
      * { function_description }
      *
      * @param      args  The arguments
@@ -370,14 +372,15 @@ public class List {
             // based on the list operation invoke the corresponding method
             switch (tokens[0]) {
                case "add":
-                if((tokens.length) == 2) {
+                if ((tokens.length) == 2) {
                 String[] t = tokens[1].split(",");
-                if(t.length == 1) {
+                if (t.length == 1) {
                     l.add(Integer.parseInt(tokens[1]));
                 }
-                else{
-                    if(t.length > 1)
-                        l.add(Integer.parseInt(t[0]),Integer.parseInt(t[1]));
+                else {
+                    if (t.length > 1) {
+                        l.add(Integer.parseInt(t[0]), Integer.parseInt(t[1]));
+                    }
                     }
                 }
                 break;
@@ -385,11 +388,12 @@ public class List {
                 System.out.println(l.count(Integer.parseInt(tokens[1])));
                 break;
                 case "addAll":
-                if(tokens.length == 2) {
+                if (tokens.length == 2) {
                 String[] t1 = tokens[1].split(",");
-                int temp[] = new int[t1.length];
-                for(int i = 0; i < temp.length; i++)
+                int[] temp = new int[t1.length];
+                for (int i = 0; i < temp.length; i++) {
                     temp[i] = Integer.parseInt(t1[i]);
+                }
                 l.addAll(temp);
                 }
                 break;
