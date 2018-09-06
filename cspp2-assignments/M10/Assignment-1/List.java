@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 /**
  * List of .
+ * @author P.V.S.Teja
  */
 public class List {
     //Implement all the methods mentioned to build a ListADT
