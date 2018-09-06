@@ -148,7 +148,7 @@ public class List<E> {
      * the item exists and otherwise false
      */
     public boolean contains(E item) {
-		return indexOf(item) >= -1;
+		return indexOf(item) > -1;
     }
     /*
      * Returns the index of the first occurrence 
@@ -157,7 +157,7 @@ public class List<E> {
      */
     public int indexOf(E item) {
     	for (int i = 0; i < size - 1; i++) {
-            if (item == list[i]) {
+            if (list[i].equals(item)) {
                 return i;
             }
         }
