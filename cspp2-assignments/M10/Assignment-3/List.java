@@ -139,7 +139,7 @@ public class List<E> {
      //        str += "\nInvalid Position Exception";
 	    // }
        
-       return "print the list";
+       return str;
     }
     /*
      * Contains return true if the list has
