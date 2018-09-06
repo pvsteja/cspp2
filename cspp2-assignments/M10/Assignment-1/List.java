@@ -282,7 +282,7 @@ public class List {
      * @return     { description_of_the_return_value }
      */
     public int indexOf(int item) {
-        for(int i = 0; i < size; i++) {
+        for(int i = 0; i < size - 1; i++) {
             if(item == list[i])
                 return i;
         }
