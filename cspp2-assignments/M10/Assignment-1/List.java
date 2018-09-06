@@ -320,7 +320,7 @@ public class List {
     public void add(int index,int item) {
         if(index >= 0 && index <= size) {
             for (int i = size; i > index; i--) {
-                list[i + 1] = list[i];
+                list[i] = list[i - 1];
             }
             list[index] = item;
             size++;
