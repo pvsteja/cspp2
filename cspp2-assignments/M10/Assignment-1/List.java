@@ -260,6 +260,10 @@ public class List {
             str = str + list[i] + ",";
         }
         str = str + list[i] + "]";
+        if (get(0) == 0) {
+            str += "\nInvalid Position Exception";
+            
+        }
         return str;
     }
     /*
@@ -330,7 +334,7 @@ public class List {
         } else if (list.length == size) {
             resize();
         } else {
-            System.out.println("check index value");
+            System.out.println("Negative Index Exception");
         }
 
     }
