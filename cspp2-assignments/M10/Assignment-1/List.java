@@ -52,17 +52,23 @@ public class List {
      * So, to keep track of the size we need a variable called size
      * Again, we use private as we don't want that size variable
      * to be accessed by the methods that are outside of the List class.
-     * 
+     *
      */
 
     // declare a private int size
     // again, don't initialize it here
     // variable initialization should be done in the constructor
+    /**
+    *
+    */
     private int size;
 
     /*
      * The purpose of the constructor is to initialize the
      * class variables with some default values.
+     */
+    /**
+     * Constructs the object.
      */
     public List() {
 
@@ -88,11 +94,16 @@ public class List {
      * There will be some clients of the ADT that will require
      * the list to contain n elements which is known
      * at the time of creating the list.
-     * 
+     *
      * The overloaded constructor is a way to initialize a list with
      * a list capacity of n items where n is given as an argument to
      * constructor.
-     * 
+     *
+     */
+    /**
+     * Constructs the object.
+     *
+     * @param      capacity  The capacity
      */
     public List(int capacity) {
         size = 0;
@@ -106,7 +117,7 @@ public class List {
      * Is it the same as the end of the array?
      * Think about how you can use the size variable to add item
      * to the list.
-     * 
+     *
      * The method returns void (nothing)
      */
     /**
@@ -142,7 +153,7 @@ public class List {
      * Resize should create an new array that is
      * double the size of the old array.
      * Then copy the contents of the old array to the new one.
-     * 
+     *
      * When should the resize method be invoked and from where?
      * Will the client invoke resize or is it internal to List class?
      * Should the resize be public method or private?
@@ -226,7 +237,7 @@ public class List {
      * System.out.println(l);
      * This statement is a shortcut for
      * System.out.println(l.toString());
-     * 
+     *
      * So, implement the toString method to display the items
      * in the list in the square brackets notation.
      * i.e., if the list has numbers 1, 2, 3
@@ -263,6 +274,13 @@ public class List {
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
+    /**
+     * Searches for the first match.
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int indexOf(int item) {
         for(int i = 0; i < size; i++) {
             if(item == list[i])
@@ -272,6 +290,9 @@ public class List {
     }
    /*Inserts all the elements of specified int 
     array to the end of list*/
+    /**
+     * { item_description }
+     */
     public void addAll(int items[]) {
         if (size + items.length >= list.length) {
             resize();
@@ -286,10 +307,16 @@ public class List {
         list = Arrays.copyOf(list, 2 * size);
     }
 
-     /* 
+     /*
         Inserts the specified element at the specified index 
     by moving all the elements to the right.
         The method returns void (nothing)
+     */
+    /**
+     * { function_description }
+     *
+     * @param      index  The index
+     * @param      item   The item
      */
     public void add(int index,int item) {
         if(index >= 0 && index <= size) {
