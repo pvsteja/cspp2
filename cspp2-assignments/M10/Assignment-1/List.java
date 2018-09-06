@@ -2,9 +2,11 @@ import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
 
+/**
+ * List of .
+ */
 public class List {
-	//Implement all the methods mentioned to build a ListADT
-
+    //Implement all the methods mentioned to build a ListADT
     /*
      * The goal for the list is to store items.
      * How are we going to store the items in the list?
@@ -26,12 +28,13 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-    
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
+    /**
+    *
+    */
     private int[] list;
-
     /*
      * What are the other class variables needed for creating a list?
      * How about keeping track of the size of the list?
@@ -61,9 +64,6 @@ public class List {
      * The purpose of the constructor is to initialize the
      * class variables with some default values.
      */
-    
-    
-
     public List() {
 
         // what are the two variables to be initialized here?
@@ -98,7 +98,6 @@ public class List {
         size = 0;
         list = new int[capacity];
     }
-    
     /*
      * The add method does what the name suggests.
      * Add an int item to the list.
@@ -243,7 +242,6 @@ public class List {
         str = str + list[i] + "]";
         return str;
     }
-    
     /*
      * Contains return true if the list has
      * the item passed as an argument to the method
@@ -284,7 +282,7 @@ public class List {
 
      /* 
         Inserts the specified element at the specified index 
-	by moving all the elements to the right.
+    by moving all the elements to the right.
         The method returns void (nothing)
      */
     public void add(int index,int item) {
@@ -303,7 +301,14 @@ public class List {
     }
     
     /* Returns the count of occurances of a given item in the list*/
-    public int count(int item){
+    /**
+     * { function_description }
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int count(int item) {
         int count = 0;
         for (int i = 0; i < size; i++) {
             if (item == list[i]) {
@@ -313,7 +318,12 @@ public class List {
         return 0;
     }
 
-	public static void main(String[] args) {
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
@@ -328,13 +338,13 @@ public class List {
             // based on the list operation invoke the corresponding method
             switch (tokens[0]) {
                case "add":
-                if((tokens.length)==2){
+                if((tokens.length) == 2) {
                 String[] t = tokens[1].split(",");
-                if(t.length==1){
+                if(t.length == 1) {
                     l.add(Integer.parseInt(tokens[1]));
                 }
                 else{
-                    if(t.length>1)
+                    if(t.length > 1)
                         l.add(Integer.parseInt(t[0]),Integer.parseInt(t[1]));
                     }
                 }
@@ -343,11 +353,11 @@ public class List {
                 System.out.println(l.count(Integer.parseInt(tokens[1])));
                 break;
                 case "addAll":
-                if(tokens.length==2){
+                if(tokens.length == 2) {
                 String[] t1 = tokens[1].split(",");
-                int temp[]=new int[t1.length];
-                for(int i=0;i<temp.length;i++)
-                    temp[i]=Integer.parseInt(t1[i]);
+                int temp[] = new int[t1.length];
+                for(int i = 0; i < temp.length; i++)
+                    temp[i] = Integer.parseInt(t1[i]);
                 l.addAll(temp);
                 }
                 break;
@@ -377,5 +387,5 @@ public class List {
                 break;
             }
         }
-	}
+    }
 }
