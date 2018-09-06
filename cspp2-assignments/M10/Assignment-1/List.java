@@ -105,7 +105,7 @@ public class List {
      *
      * @param      capacity  The capacity
      */
-    public List(int capacity) {
+    public List(final int capacity) {
         size = 0;
         list = new int[capacity];
     }
@@ -120,7 +120,7 @@ public class List {
      *
      * The method returns void (nothing)
      */
-    /**
+    /**.
      * { function_description }
      *
      * @param      item  The item
@@ -173,6 +173,11 @@ public class List {
      * to the objects outside the list
      *
      * The method returns an int. Empty list should return 0.
+     */
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
      */
     public int size() {
         return size;
@@ -261,8 +266,7 @@ public class List {
         }
         str = str + list[i] + "]";
         if (get(0) == 0) {
-            str += "\nInvalid Position Exception";
-            
+            str += "\nInvalid Position Exception";     
         }
         return str;
     }
@@ -272,12 +276,19 @@ public class List {
      * So, iterate through the list and return true if
      * the item exists and otherwise false
      */
-    public boolean contains(int item) {
+    /**
+     * { function_description }
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public boolean contains(final int item) {
         return indexOf(item) == -1;
     }
 
     /*
-     * Returns the index of the first occurrence 
+     * Returns the index of the first occurrence
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
@@ -288,10 +299,11 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public int indexOf(int item) {
-        for(int i = 0; i < size - 1; i++) {
-            if(item == list[i])
+    public int indexOf(final int item) {
+        for (int i = 0; i < size - 1; i++) {
+            if (item == list[i]) {
                 return i;
+            }
         }
         return -1;
     }
@@ -306,7 +318,7 @@ public class List {
         }
     }
 
-    /**
+    /**.
      * { function_description }
      */
     void resize() {
@@ -380,8 +392,7 @@ public class List {
                 String[] t = tokens[1].split(",");
                 if (t.length == 1) {
                     l.add(Integer.parseInt(tokens[1]));
-                }
-                else {
+                } else {
                     if (t.length > 1) {
                         l.add(Integer.parseInt(t[0]), Integer.parseInt(t[1]));
                     }
@@ -425,7 +436,10 @@ public class List {
                 case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
                 break;
+                default:
+                break;
             }
         }
     }
 }
+
