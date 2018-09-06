@@ -347,7 +347,7 @@ public class List {
                 count++;
             }
         }
-        return count;
+        return 0;
     }
 
     /**
