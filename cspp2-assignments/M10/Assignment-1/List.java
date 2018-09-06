@@ -127,6 +127,9 @@ public class List {
      */
     public void add(final int item) {
         //Inserts the specified element at the end of the zelist.
+        if (size == list.length) {
+            resize();
+        }
         list[size++] = item;
     }
 
@@ -250,7 +253,7 @@ public class List {
      */
     public String toString() {
         if(size == 0)
-            return "";
+            return "[]";
         String str = "[";
         int i = 0;
         for(i = 0; i < size - 1; i++) {
@@ -294,13 +297,9 @@ public class List {
      * { item_description }
      */
     public void addAll(int items[]) {
-        if (size + items.length >= list.length) {
-            resize();
-        }
         for (int i = 0; i < items.length; i++) {
             add(items[i]);
         }
-
     }
 
     void resize() {
