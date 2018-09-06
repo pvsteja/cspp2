@@ -67,6 +67,7 @@ public class List {
      * The purpose of the constructor is to initialize the
      * class variables with some default values.
      */
+    private static final int TEN = 10;
     /**
      * Constructs the object.
      */
@@ -204,7 +205,7 @@ public class List {
      * The method returns void (nothing)
      */
 
-    /**
+    /**.
      * { function_description }
      *
      * @param      index  The index
@@ -233,7 +234,7 @@ public class List {
      * How do we check if the position is greater than the
      * number of items in the list? Would size variable be useful?
      */
-    /**
+    /**.
      * { function_description }
      *
      * @param      index  The index
