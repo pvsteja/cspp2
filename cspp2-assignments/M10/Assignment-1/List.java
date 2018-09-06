@@ -318,8 +318,8 @@ public class List {
      * @param      item   The item
      */
     public void add(int index,int item) {
-        if(index >= 0 && index <= size) {
-            for (int i = size - 1; i > index; i--) {
+        if(index >= 0) {
+            for (int i = size; i > index; i--) {
                 list[i] = list[i - 1];
             }
             list[index] = item;
