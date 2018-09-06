@@ -174,7 +174,7 @@ public class List {
      *
      * The method returns an int. Empty list should return 0.
      */
-    /**
+    /**.
      * { function_description }
      *
      * @return     { description_of_the_return_value }
@@ -187,7 +187,7 @@ public class List {
      * The remove method does what the name suggests.
      * Removes an int item, specified by the index argument, from the list
      * It also does an additional step.
-     * Think about what happens when 
+     * Think about what happens when
      * an item is removed from the middle of the list
      * It creates a hole in the list, right?
      * This would mean, all the items that are
@@ -204,11 +204,16 @@ public class List {
      * The method returns void (nothing)
      */
 
-    public void remove(int index) {
+    /**
+     * { function_description }
+     *
+     * @param      index  The index
+     */
+    public void remove(final int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
-        if(index >= 0 && index < size) {
-            for(int i = index; i < size - 1; i++) {
+        if (index >= 0 && index < size) {
+            for (int i = index; i < size - 1; i++) {
                 list[i] = list[i + 1];
             }
             size--;
@@ -225,11 +230,18 @@ public class List {
      * How can an element not be there at a given position?
      * Well, if the position is greater than the number of items
      * in the list then that would mean the item doesn't exist.
-     * How do we check if the position is greater than the 
+     * How do we check if the position is greater than the
      * number of items in the list? Would size variable be useful?
      */
-    public int get(int index) {
-        if(index < 0 || index >= size) {
+    /**
+     * { function_description }
+     *
+     * @param      index  The index
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int get(final int index) {
+        if (index < 0 || index >= size) {
             return -1;
         } else {
             return list[index];
@@ -256,17 +268,23 @@ public class List {
      * not all the elements of the array.
      *
      */
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
-        if(size == 0)
+        if (size == 0) {
             return "[]";
+        }
         String str = "[";
         int i = 0;
-        for(i = 0; i < size - 1; i++) {
+        for (i = 0; i < size - 1; i++) {
             str = str + list[i] + ",";
         }
         str = str + list[i] + "]";
         if (get(0) == 0) {
-            str += "\nInvalid Position Exception";     
+            str += "\nInvalid Position Exception";
         }
         return str;
     }
@@ -276,7 +294,7 @@ public class List {
      * So, iterate through the list and return true if
      * the item exists and otherwise false
      */
-    /**
+    /**.
      * { function_description }
      *
      * @param      item  The item
