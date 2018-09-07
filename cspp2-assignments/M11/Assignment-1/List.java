@@ -246,7 +246,7 @@ public class List {
     }
     /*
     Inserts all the elements of specified int array to the end of list
-    
+
     @param      newArray  The new array
     */
     public void addAll(int[] newArray) {
@@ -262,10 +262,15 @@ public class List {
      public void removeAll(int[] newArray) {
         // write the logic
         for (int i = 0; i < newArray.length; i++) {
-            int index = indexOf(newArray[i]);
-            while (index != -1) {
-                remove(index);
-                index = indexOf(newArray[i]);
+            // int index = indexOf(newArray[i]);
+            // while (index != -1) {
+                // remove(index);
+                // index = indexOf(newArray[i]);
+            // }
+            for (int j = 0; j <= size; j++) {
+                if (contains(newArray[i])) {
+                    remove(indexOf(newArray[i]));
+                }
             }
         }
      }
@@ -284,7 +289,7 @@ public class List {
         List newList = new List();
         if (end > size) {
             System.out.println("Index Out of Bounds Exception");
-            return null;            
+            return null;
         }
         if (start >= end) {
             System.out.println("Index Out of Bounds Exception");
