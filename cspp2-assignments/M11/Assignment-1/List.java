@@ -264,8 +264,8 @@ public class List {
         for (int i = 0; i < newArray.length; i++) {
             int index = indexOf(newArray[i]);
             while (index != -1) {
-                remove(indexOf(newArray[i]));
-                // index = indexOf(newArray[i]);
+                remove(index);
+                index = indexOf(newArray[i]);
             }
         }
      }
