@@ -119,7 +119,7 @@ public class List {
      * { function_description }
      */
     public int[] resize() {
-        return Arrays.copyOf(list, 2 * size);
+        return Arrays.copyOf(list, 2 * list.length);
     }
     /*
      * The size method returns the value of the size. The purpose of the method
