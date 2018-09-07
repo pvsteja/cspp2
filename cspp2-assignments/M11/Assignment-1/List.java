@@ -237,7 +237,7 @@ public class List {
      */
     public int indexOf(int item) {
         // Replace the code below
-        for (int i = 0; i < size - 1; i++) {
+        for (int i = 0; i < size; i++) {
             if (item == list[i]) {
                 return i;
             }
