@@ -284,7 +284,7 @@ public class List {
                 // remove(index);
                 // index = indexOf(newArray[i]);
             // }
-            for (int j = 0; j <= count(newArray[i]); j++) {
+            for (int j = 0; j < count(newArray[i]); j++) {
                 if (contains(newArray[i])) {
                     remove(indexOf(newArray[i]));
                 }
