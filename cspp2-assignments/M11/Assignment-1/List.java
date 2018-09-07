@@ -110,10 +110,10 @@ public class List {
         if (list.length == size) {
             resize();
         }
-        if (size < list.length) {
+
         list[size] = item;
         size++;
-        }
+
     }
     /**.
      * { function_description }
