@@ -255,6 +255,23 @@ public class List {
             add(newArray[i]);
         }
     }
+    /**
+     * frequency of an element.
+     *
+     * @param      item  The item
+     *
+     * @return     int - frequency.
+     */
+    public int count(final int item) {
+        int c = 0;
+        for (int i = 0; i < size; i++) {
+            if (list[i] == item) {
+                c++;
+            }
+        }
+        return c;
+    }
+
     /*
      Removes all of its elements that are contained in the specified int array.
      @param      newArray  The new array
@@ -267,7 +284,7 @@ public class List {
                 // remove(index);
                 // index = indexOf(newArray[i]);
             // }
-            for (int j = 0; j <= size; j++) {
+            for (int j = 0; j <= count(newArray[i]); j++) {
                 if (contains(newArray[i])) {
                     remove(indexOf(newArray[i]));
                 }
