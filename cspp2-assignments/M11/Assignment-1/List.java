@@ -90,7 +90,6 @@ public class List {
         // That is the initial value to use for size.
 
     }
-    
     /*
      * The add method does what the name suggests. Add an int item to the list.
      * The assumption is to store the item at the end of the list What is the
@@ -101,6 +100,11 @@ public class List {
      *
      * @param      item  The item
      */
+    /**
+     * { function_description }
+     *
+     * @param      item  The item
+     */
     public void add(final int item) {
         //Inserts the specified element at the end of the list.
         if (size < list.length) {
@@ -108,7 +112,7 @@ public class List {
         size++;
         }
     }
-    /**
+    /**.
      * { function_description }
      */
     private void resize() {
@@ -119,6 +123,11 @@ public class List {
      * is to announce the size of the list to the objects outside the list
      *
      * The method returns an int. Empty list should return 0.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    /**
+     * { function_description }
      *
      * @return     { description_of_the_return_value }
      */
