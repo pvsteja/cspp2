@@ -108,7 +108,7 @@ public class List {
     public void add(final int item) {
         //Inserts the specified element at the end of the list.
         if (list.length == size) {
-            resize();
+            list = resize();
         }
 
         list[size] = item;
@@ -118,8 +118,8 @@ public class List {
     /**.
      * { function_description }
      */
-    private void resize() {
-        list = Arrays.copyOf(list, 2 * size);
+    public int[] resize() {
+        return Arrays.copyOf(list, 2 * size);
     }
     /*
      * The size method returns the value of the size. The purpose of the method
