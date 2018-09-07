@@ -5,15 +5,15 @@ import java.util.Arrays;
  * List of .
  */
 public class List {
-    /**
+    /**.
      * { var_description }
      */
     private static final int TEN = 10;
-    /**
+    /**.
      * { var_description }
      */
     private int[] list;
-    /**
+    /**.
      * { var_description }
      */
     private int size;
@@ -40,7 +40,6 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-    
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
@@ -62,7 +61,7 @@ public class List {
      * So, to keep track of the size we need a variable called size
      * Again, we use private as we don't want that size variable
      * to be accessed by the methods that are outside of the List class.
-     * 
+     *
      */
 
     // declare a private int size
@@ -205,7 +204,7 @@ public class List {
         }
         str = str + list[i] + "]";
         return str;
-    } 
+    }
     /*
      * Contains return true if the list has the item passed as an argument to
      * the method So, iterate through the list and return true if the item
@@ -249,7 +248,6 @@ public class List {
     }
     /*
      Removes all of its elements that are contained in the specified int array.
-    
      @param      newArray  The new array
     */
      public void removeAll(int[] newArray) {
@@ -268,10 +266,8 @@ public class List {
     second parameter indicates the endIndex. Returns null and print
     "Index Out of Bounds Exception" if any of values start and end are negative
     and also if start is greater than end.
-    
     @param      start  The start
     @param      end    The end
-    
     @return     { description_of_the_return_value }
     */
     public List subList(int start, int end) {
@@ -284,7 +280,6 @@ public class List {
             System.out.println("Index Out of Bounds Exception");
             return null;
         } else {
-            
             for (int i = start; i < end; i++) {
                 newList.add(this.get(i));
             }
@@ -294,9 +289,7 @@ public class List {
     /*
     Returns a boolean indicating whether the parameter i.e a List object is
     exactly matching with the given list or not.
-    
     @param      list  The list
-    
     @return     { description_of_the_return_value }
     */
     public boolean equals(List list ) {
