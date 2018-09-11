@@ -249,7 +249,7 @@ public class List {
    */
   public boolean contains(final int item) {
     for (int i = 0; i < size; i++) {
-      if(list[i] == item) {
+      if (list[i] == item) {
         return true;
       }
     }
@@ -289,7 +289,7 @@ public class List {
       add(newArray[i]);
     }
   }
-  /**
+  /**.
    * { function_description }
    *
    * @param      a     { parameter_description }
