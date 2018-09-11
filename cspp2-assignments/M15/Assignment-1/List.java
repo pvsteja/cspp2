@@ -289,6 +289,12 @@ public class List {
       add(newArray[i]);
     }
   }
+  /**
+   * { function_description }
+   *
+   * @param      a     { parameter_description }
+   * @param      b     { parameter_description }
+   */
   public void add(final int a, final int b) {
     for (int i = 0; i < size; i++) {
       list[i + 1] = list[i];
@@ -499,6 +505,9 @@ public class List {
         break;
       case "clear":
         l.clear();
+        break;
+      case "count":
+        System.out.println(l.count(Integer.parseInt(tokens[1])));
         break;
       default:
         break;
