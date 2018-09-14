@@ -31,7 +31,6 @@ class Show {
 class Patron {
     private String name;
     private String phonenumber;
-    private String[] seats;
     private String[] bookedseats;
 
     Patron(String name, String phonenumber, String[] bookedseats) {
@@ -94,9 +93,9 @@ class BookYourShow {
     }
     public void bookAShow(String movie, String datetime,
      Patron p) {
+        addAPatron(p);
         Show availableshow = getAShow(movie, datetime);
         if (availableshow != null) {
-            addAPatron(p);
             String[] seat = availableshow.getSeats();
             String[] bookedseats = p.getBookedSeats();
             for (int i = 0; i < seat.length; i++) {
