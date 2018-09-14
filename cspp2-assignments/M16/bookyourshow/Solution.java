@@ -83,7 +83,6 @@ class BookYourShow {
         patron[patronsize++] = newpatron;
     }
     public Show getAShow(String movie, String datetime) {
-        System.out.println(showSize);
         for (int i = 0; i < showSize; i++) {
             if (show[i].getMovie().equals(movie)
                 && show[i].getDateTime().equals(datetime)) {
