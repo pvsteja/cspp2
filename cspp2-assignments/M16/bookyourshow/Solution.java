@@ -1,25 +1,55 @@
 import java.util.Arrays;
 import java.util.Scanner;
+/**.
+ * Class for show.
+ */
 class Show {
     private String movie;
     private String datetime;
     private String[] seats;
     private String[] bookedseats;
 
-    public Show(String movie, String datetime, String[] seats) {
+    /**.
+     * Constructs the object.
+     *
+     * @param      movie     The movie
+     * @param      datetime  The datetime
+     * @param      seats     The seats
+     */
+    public Show(final String movie, final String datetime, final String[] seats) {
         this.movie = movie;
         this.datetime = datetime;
         this.seats = seats;
     }
+    /**
+     * Gets the movie.
+     *
+     * @return     The movie.
+     */
     public String getMovie() {
         return movie;
     }
+    /**
+     * Gets the date time.
+     *
+     * @return     The date time.
+     */
     public String getDateTime() {
         return datetime;
     }
+    /**
+     * Gets the seats.
+     *
+     * @return     The seats.
+     */
     public String[] getSeats() {
         return seats;
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         String s = "";
         s += movie + "," + datetime + ",";
@@ -28,31 +58,64 @@ class Show {
     }
 }
 
+/**
+ * Class for patron.
+ */
 class Patron {
     private String name;
     private String phonenumber;
     private String[] bookedseats;
 
-    Patron(String name, String phonenumber, String[] bookedseats) {
+    /**.
+     * Constructs the object.
+     *
+     * @param      name         The name
+     * @param      phonenumber  The phonenumber
+     * @param      bookedseats  The bookedseats
+     */
+    Patron(final String name, final String phonenumber, final String[] bookedseats) {
         this.name = name;
         this.phonenumber = phonenumber;
         this.bookedseats = bookedseats;
     }
+    /**
+     * Gets the name.
+     *
+     * @return     The name.
+     */
     public String getName() {
         return this.name;
     }
+    /**
+     * Gets the phone number.
+     *
+     * @return     The phone number.
+     */
     public String getPhoneNumber() {
         return this.phonenumber;
     }
+    /**
+     * Gets the booked seats.
+     *
+     * @return     The booked seats.
+     */
     public String[] getBookedSeats() {
         return this.bookedseats;
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         String s = "";
         s += name + " " + phonenumber + " " + Arrays.toString(bookedseats);
         return s;
     }
 }
+/**
+ * Class for book your show.
+ */
 class BookYourShow {
     private int showSize;
     private int patronsize;
@@ -64,25 +127,49 @@ class BookYourShow {
         this.show = new Show[10];
         this.patron = new Patron[10];
     }
+    /**
+     * Shows the resize.
+     */
     public void showResize() {
         show = Arrays.copyOf(show, show.length * 2);
     }
+    /**
+     * { function_description }
+     */
     public void patronResize() {
         patron = Arrays.copyOf(patron, patron.length * 2);
     }
+    /**
+     * Adds a show.
+     *
+     * @param      newShow  The new show
+     */
     public void addAShow(final Show newShow) {
         if (showSize == show.length) {
             showResize();
         }
         show[showSize++] = newShow;
     }
+    /**
+     * Adds a patron.
+     *
+     * @param      newpatron  The newpatron
+     */
     public void addAPatron(final Patron newpatron) {
         if (patronsize == patron.length) {
             patronResize();
         }
         patron[patronsize++] = newpatron;
     }
-    public Show getAShow(String movie, String datetime) {
+    /**
+     * Gets a show.
+     *
+     * @param      movie     The movie
+     * @param      datetime  The datetime
+     *
+     * @return     A show.
+     */
+    public Show getAShow(final String movie, final String datetime) {
         for (int i = 0; i < showSize; i++) {
             if (show[i].getMovie().equals(movie)
                 && show[i].getDateTime().equals(datetime)) {
@@ -91,7 +178,14 @@ class BookYourShow {
         }
         return null;
     }
-    public void bookAShow(String movie, String datetime,
+    /**
+     * { function_description }
+     *
+     * @param      movie     The movie
+     * @param      datetime  The datetime
+     * @param      p         { parameter_description }
+     */
+    public void bookAShow(final String movie, final String datetime,
      Patron p) {
         addAPatron(p);
         Show availableshow = getAShow(movie, datetime);
@@ -111,12 +205,22 @@ class BookYourShow {
             System.out.println("No show");
         }
     }
+    /**
+     * Shows all.
+     */
     public void showAll() {
         for (int i = 0; i < showSize; i++) {
             System.out.println(show[i]);
         }
     }
-    public void printTicket(String movie, String phonenumber, String datetime) {
+    /**
+     * { function_description }
+     *
+     * @param      movie        The movie
+     * @param      phonenumber  The phonenumber
+     * @param      datetime     The datetime
+     */
+    public void printTicket(final String movie, final String phonenumber, final String datetime) {
         Show show = getAShow(movie, datetime);
         System.out.println(Arrays.toString(patron));
         if (show != null) {
@@ -133,7 +237,13 @@ class BookYourShow {
     }
 
 }
+/**.
+ * Class for solution.
+ */
 public class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
 
     }
