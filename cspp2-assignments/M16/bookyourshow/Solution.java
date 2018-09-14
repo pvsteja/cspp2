@@ -64,18 +64,6 @@ class BookYourShow {
         this.show = new Show[10];
         this.patron = new Patron[10];
     }
-    // private int getShowSize() {
-    //  show = new Show();
-    //  // s[] shows = new Show[10];
-    //  show = Arrays.copyOf(show, 2 * size);
-    //  return show;
-    // }
-    // private int getPatronsize() {
-    //  patron = new Patron();
-    //  // p[] patron = new Patron[10];
-    //  patron = Arrays.copyOf(patron, 2 * size);
-    //  return patron;
-    // }
     public void showResize() {
         show = Arrays.copyOf(show, show.length * 2);
     }
@@ -89,7 +77,7 @@ class BookYourShow {
         show[showSize++] = newShow;
     }
     public void addAPatron(final Patron newpatron) {
-        if (patronsize > patron.length) {
+        if (patronsize == patron.length) {
             patronResize();
         }
         patron[patronsize++] = newpatron;
@@ -105,7 +93,7 @@ class BookYourShow {
         }
         return null;
     }
-    public void bookAShow(String datetime, String movie,
+    public void bookAShow(String movie, String datetime,
      Patron p) {
         addAPatron(p);
         Show availableshow = getAShow(movie, datetime);
