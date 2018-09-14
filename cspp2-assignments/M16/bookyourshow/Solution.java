@@ -111,6 +111,7 @@ class BookYourShow {
             String[] seat = availableshow.getSeats();
             String[] bookedseats = p.getBookedSeats();
             for (int i = 0; i <= seat.length; i++) {
+                System.out.println("first for");
                 for (int  j = 0; j <= bookedseats.length; j++) {
                     if (seat[i].equals(bookedseats[j])
                         && !seat[i].equals("N/A")) {
@@ -120,8 +121,9 @@ class BookYourShow {
 
             }
 
-        }else
-        System.out.println("No show");
+        }else {
+            System.out.println("No show");
+        }
     }
     public void showAll() {
         for (int i = 0; i < showSize; i++) {
