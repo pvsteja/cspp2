@@ -27,7 +27,7 @@ class Show {
      * @param      datatime  The datetime
      * @param      seets     The seats
      */
-    public Show(final String mavie, final String datatime, final String[] seets) {
+    Show(final String mavie, final String datatime, final String[] seets) {
         this.movie = mavie;
         this.datetime = datatime;
         this.seats = seets;
@@ -102,7 +102,8 @@ class Patron {
      * @param      phoanenumber  The phonenumber
      * @param      bookeedseats  The bookedseats
      */
-    Patron(final String naame, final String phoanenumber, final String[] bookeedseats) {
+    Patron(final String naame, final String phoanenumber,
+     final String[] bookeedseats) {
         this.name = naame;
         this.phonenumber = phoanenumber;
         this.bookedseats = bookeedseats;
@@ -162,7 +163,7 @@ class BookYourShow {
      * { var_description }
      */
     private Patron[] patron;
-    /**
+    /**.
      * { var_description }
      */
     private static final int TEN = 10;
@@ -274,8 +275,8 @@ class BookYourShow {
         if (show != null) {
             for (int i = 0; i < patronsize; i++) {
                 if ((phonenumber).equals(patron[i].getPhoneNumber())) {
-                    System.out.println(phonenumber + " " + movie +
-                     " " + datetime);
+                    System.out.println(phonenumber + " " + movie
+                        + " " + datetime);
                     return;
                 }
             }
