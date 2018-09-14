@@ -8,19 +8,18 @@ class Show {
      * { var_description }
      */
     private String movie;
-    /**
+    /**.
      * { var_description }
      */
     private String datetime;
-    /**
+    /**.
      * { var_description }
      */
     private String[] seats;
-    /**
+    /**.
      * { var_description }
      */
     private String[] bookedseats;
-
     /**.
      * Constructs the object.
      *
@@ -41,7 +40,7 @@ class Show {
     public String getMovie() {
         return movie;
     }
-    /**
+    /**.
      * Gets the date time.
      *
      * @return     The date time.
@@ -49,7 +48,7 @@ class Show {
     public String getDateTime() {
         return datetime;
     }
-    /**
+    /**.
      * Gets the seats.
      *
      * @return     The seats.
@@ -57,7 +56,7 @@ class Show {
     public String[] getSeats() {
         return seats;
     }
-    /**
+    /**.
      * Returns a string representation of the object.
      *
      * @return     String representation of the object.
@@ -74,19 +73,18 @@ class Show {
  * Class for patron.
  */
 class Patron {
-    /**
+    /**.
      * { var_description }
      */
     private String name;
-    /**
+    /**.
      * { var_description }
      */
     private String phonenumber;
-    /**
+    /**.
      * { var_description }
      */
     private String[] bookedseats;
-
     /**.
      * Constructs the object.
      *
@@ -99,7 +97,7 @@ class Patron {
         this.phonenumber = phonenumber;
         this.bookedseats = bookedseats;
     }
-    /**
+    /**.
      * Gets the name.
      *
      * @return     The name.
@@ -107,7 +105,7 @@ class Patron {
     public String getName() {
         return this.name;
     }
-    /**
+    /**.
      * Gets the phone number.
      *
      * @return     The phone number.
@@ -115,7 +113,7 @@ class Patron {
     public String getPhoneNumber() {
         return this.phonenumber;
     }
-    /**
+    /**.
      * Gets the booked seats.
      *
      * @return     The booked seats.
@@ -123,7 +121,7 @@ class Patron {
     public String[] getBookedSeats() {
         return this.bookedseats;
     }
-    /**
+    /**.
      * Returns a string representation of the object.
      *
      * @return     String representation of the object.
@@ -134,23 +132,23 @@ class Patron {
         return s;
     }
 }
-/**
+/**.
  * Class for book your show.
  */
 class BookYourShow {
-    /**
+    /**.
      * { var_description }
      */
     private int showSize;
-    /**
+    /**.
      * { var_description }
      */
     private int patronsize;
-    /**
+    /**.
      * { var_description }
      */
     private Show[] show;
-    /**
+    /**.
      * { var_description }
      */
     private Patron[] patron;
@@ -163,19 +161,19 @@ class BookYourShow {
         this.show = new Show[10];
         this.patron = new Patron[10];
     }
-    /**
+    /**.
      * Shows the resize.
      */
     public void showResize() {
         show = Arrays.copyOf(show, show.length * 2);
     }
-    /**
+    /**.
      * { function_description }
      */
     public void patronResize() {
         patron = Arrays.copyOf(patron, patron.length * 2);
     }
-    /**
+    /**.
      * Adds a show.
      *
      * @param      newShow  The new show
@@ -186,7 +184,7 @@ class BookYourShow {
         }
         show[showSize++] = newShow;
     }
-    /**
+    /**.
      * Adds a patron.
      *
      * @param      newpatron  The newpatron
@@ -197,7 +195,7 @@ class BookYourShow {
         }
         patron[patronsize++] = newpatron;
     }
-    /**
+    /**.
      * Gets a show.
      *
      * @param      movie     The movie
@@ -214,7 +212,7 @@ class BookYourShow {
         }
         return null;
     }
-    /**
+    /**.
      * { function_description }
      *
      * @param      movie     The movie
@@ -276,13 +274,18 @@ class BookYourShow {
 /**.
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
     private Solution() {
 
     }
+/**.
+ * { function_description }
+ *
+ * @param      args  The arguments
+ */
 public static void main(final String[] args) {
     BookYourShow bys = new BookYourShow();
     Scanner scan = new Scanner(System.in);
