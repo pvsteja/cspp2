@@ -48,7 +48,7 @@ class Patron {
     public String[] getBookedSeats() {
         return this.bookedseats;
     }
-    public String tostring() {
+    public String toString() {
         String s = "";
         s += name + " " + phonenumber + " " + Arrays.toString(bookedseats);
         return s;
