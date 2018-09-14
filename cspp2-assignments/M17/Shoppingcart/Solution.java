@@ -6,17 +6,17 @@ import java.util.Scanner;
  */
 class Item {
     /**
-     * initializing String productname.
+     * initializing String name.
      */
-    private String productname;
+    private String name;
     /**
      * initializing quantitiy.
      */
     private int quantity;
     /**
-     * initializing unitprice.
+     * initializing price.
      */
-    private double unitprice;
+    private double price;
     /**
      * Constructs the object.
      *
@@ -25,9 +25,9 @@ class Item {
      * @param      unitpric  The unitpric
      */
     Item(final String naam, final int quant, final double unitpric) {
-        this.productname = naam;
+        this.name = naam;
         this.quantity = quant;
-        this.unitprice = unitpric;
+        this.price = unitpric;
     }
     /**
      * Constructs the object.
@@ -36,16 +36,16 @@ class Item {
      * @param      quant  The quant
      */
     Item(final String naam, final int quant) {
-        this.productname = naam;
+        this.name = naam;
         this.quantity = quant;
     }
     /**
-     * Gets the productname.
+     * Gets the name.
      *
-     * @return     The productname.
+     * @return     The name.
      */
     public String getName() {
-        return this.productname;
+        return this.name;
     }
     /**
      * Gets the quantity.
@@ -56,12 +56,12 @@ class Item {
         return this.quantity;
     }
     /**
-     * Gets the unitprice.
+     * Gets the price.
      *
-     * @return     The unitprice.
+     * @return     The price.
      */
     public double getPrice() {
-        return this.unitprice;
+        return this.price;
     }
 
     /**
@@ -69,10 +69,10 @@ class Item {
      *
      * @param      quant  The quant
      *
-     * @return     { description_of_the_return_value }
+     *
      */
-    public int setQuantity(final int quant) {
-        return this.quantity = quant;
+    public void setQuantity(final int quant) {
+        this.quantity = quant;
     }
     /**
      * Returns a string representation of the object.
@@ -81,7 +81,7 @@ class Item {
      */
     public String toString() {
         String str = "";
-        str += productname + " " + quantity + " " + unitprice;
+        str += name + " " + quantity + " " + price;
         return str;
     }
 }
@@ -117,11 +117,11 @@ class ShoppingCart {
     /**
      * initializing cart size.
      */
-    private int car;
+    private int cartsize;
     /**
      * initializing catalog size.
      */
-    private int cat;
+    private int catalogsize;
     /**
      * initializing discount variable..
      */
@@ -148,8 +148,8 @@ class ShoppingCart {
     ShoppingCart() {
         catalog = new Item[TEN];
         cart = new Item[TEN];
-        car = 0;
-        cat = 0;
+        cartsize = 0;
+        catalogsize = 0;
 
     }
     /**
@@ -158,12 +158,12 @@ class ShoppingCart {
      * @param      item  The item
      */
     public void addToCatalog(final Item item) {
-        if (cat >= catalog.length) {
+        if (catalogsize >= catalog.length) {
             itemResize();
         }
         if (!(contains(item.getName()))) {
-            catalog[cat] = item;
-            cat += 1;
+            catalog[catalogsize] = item;
+            catalogsize += 1;
         }
     }
     /**
@@ -183,7 +183,7 @@ class ShoppingCart {
      * @return     the index in catalog array.
      */
     public int indexOf(final String item) {
-        for (int i = 0; i < cat; i++) {
+        for (int i = 0; i < catalogsize; i++) {
             if (item.equals(catalog[i].getName())) {
                 return i;
             }
@@ -198,7 +198,7 @@ class ShoppingCart {
      * @return     the index of element;
      */
     public int carIndexOf(final String item) {
-        for (int i = 0; i < car; i++) {
+        for (int i = 0; i < cartsize; i++) {
             if (item.equals(cart[i].getName())) {
                 return i;
             }
@@ -211,18 +211,18 @@ class ShoppingCart {
      * @param      item  The item.
      */
     public void addToCart(final Item item) {
-        if (car == cart.length) {
+        if (cartsize == cart.length) {
             itemResize();
         }
         int index = carIndexOf(item.getName());
         if (index == -1) {
-            for (int i = 0; i < cat; i++) {
+            for (int i = 0; i < catalogsize; i++) {
                 if ((item.getName().equals(catalog[i].
                     getName()))
                         && (item.getQuantity()
                             <= catalog[i].getQuantity())) {
-                    cart[car] = item;
-                    car += 1;
+                    cart[cartsize] = item;
+                    cartsize += 1;
                 }
             }
         } else {
@@ -236,13 +236,13 @@ class ShoppingCart {
      * rezizing the cart array.
      */
     public void cartResize() {
-        cart = Arrays.copyOf(cart, car + 2);
+        cart = Arrays.copyOf(cart, cartsize + 2);
     }
     /**
      * rezizing the catalog array.
      */
     public void itemResize() {
-        catalog = Arrays.copyOf(catalog, cat + 2);
+        catalog = Arrays.copyOf(catalog, catalogsize + 2);
     }
     /**
      * Removes a from cart.
@@ -250,16 +250,16 @@ class ShoppingCart {
      * @param      item  The item
      */
     public void removeFromCart(final Item item) {
-        for (int i = 0; i < car; i++) {
+        for (int i = 0; i < cartsize; i++) {
             if (item.getName().equals(cart[i].getName())) {
                 int quant = cart[i].getQuantity()
                 - item.getQuantity();
                 cart[i].setQuantity(quant);
                 if (cart[i].getQuantity() <= 0) {
-                    for (int j = i; j < car; j++) {
+                    for (int j = i; j < cartsize; j++) {
                         cart[i] = cart[i + 1];
                     }
-                    car -= 1;
+                    cartsize -= 1;
                 }
 
             }
@@ -269,7 +269,7 @@ class ShoppingCart {
      * Shows the items in the cart.
     */
     public void showCart() {
-        for (int i = 0; i < car; i++) {
+        for (int i = 0; i < cartsize; i++) {
             System.out.println(cart[i].getName() + " "
                                + cart[i].getQuantity());
         }
@@ -278,7 +278,7 @@ class ShoppingCart {
      * Shows the catalog items.
      */
     public void showCatalog() {
-        for (int i = 0; i < cat; i++) {
+        for (int i = 0; i < catalogsize; i++) {
             System.out.println(catalog[i]);
         }
     }
@@ -289,7 +289,7 @@ class ShoppingCart {
      */
     public double getTotalAmount() {
         double amount = 0.0;
-        for (int i = 0; i < car; i++) {
+        for (int i = 0; i < cartsize; i++) {
             amount += catalog[indexOf(cart[i].getName())].
                       getPrice() * cart[i].getQuantity();
         }
@@ -331,8 +331,8 @@ class ShoppingCart {
      */
     public void printInvoice() {
         double sum = 0;
-        System.out.println("productName   quantity   unitPrice");
-        for (int i = 0; i < car; i++) {
+        System.out.println("Name   quantity   Price");
+        for (int i = 0; i < cartsize; i++) {
             sum = catalog[indexOf(cart[i].getName())].getPrice();
             System.out.println(cart[i].getName() + " "
                               + cart[i].getQuantity() + " " + sum);
