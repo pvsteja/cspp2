@@ -108,10 +108,10 @@ class BookYourShow {
         addAPatron(p);
         Show availableshow = getAShow(movie, datetime);
         if (availableshow != null) {
+            System.out.println("Hai");
             String[] seat = availableshow.getSeats();
             String[] bookedseats = p.getBookedSeats();
             for (int i = 0; i <= seat.length; i++) {
-                System.out.println("first for");
                 for (int  j = 0; j <= bookedseats.length; j++) {
                     if (seat[i].equals(bookedseats[j])
                         && !seat[i].equals("N/A")) {
