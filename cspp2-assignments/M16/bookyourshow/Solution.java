@@ -119,14 +119,15 @@ class BookYourShow {
     public void printTicket(String movie, String phonenumber, String datetime) {
         Show show = getAShow(movie, datetime);
         if (show != null) {
-            for (int i = 0; i <= patronsize; i++) {
+            for (int i = 0; i < patronsize; i++) {
                 if ((phonenumber).equals(patron[i].getPhoneNumber())) {
                     System.out.println(phonenumber + " " + movie + " " + datetime);
                     return;
                 }
-            System.out.println("Invalid");
             }
-        System.out.println("Invalid");
+            System.out.println("invalid");
+        } else {
+            System.out.println("invalid");
         }
     }
 
