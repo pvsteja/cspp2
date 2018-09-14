@@ -12,13 +12,13 @@ class Show {
         this.seats = seats;
     }
     public String getMovie() {
-        return this.movie;
+        return movie;
     }
     public String getDateTime() {
-        return this.datetime;
+        return datetime;
     }
     public String[] getSeats() {
-        return this.seats;
+        return seats;
     }
     public String toString() {
         String s = "";
@@ -95,9 +95,11 @@ class BookYourShow {
         patron[patronsize++] = newpatron;
     }
     public Show getAShow(String movie, String datetime) {
+        System.out.println(showSize);
         for (int i = 0; i < showSize; i++) {
             if (show[i].getMovie().equals(movie)
                 && show[i].getDateTime().equals(datetime)) {
+                System.out.println("Inside");
                 return show[i];
             }
         }
@@ -108,7 +110,6 @@ class BookYourShow {
         addAPatron(p);
         Show availableshow = getAShow(movie, datetime);
         if (availableshow != null) {
-            System.out.println("Hai");
             String[] seat = availableshow.getSeats();
             String[] bookedseats = p.getBookedSeats();
             for (int i = 0; i <= seat.length; i++) {
