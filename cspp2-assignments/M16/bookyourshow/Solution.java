@@ -50,6 +50,7 @@ class Patron {
     }
     public String tostring() {
         String s = "";
+        s += name + " " + phonenumber + " " + Arrays.toString(bookedseats);
         return s;
     }
 }
@@ -118,6 +119,7 @@ class BookYourShow {
     }
     public void printTicket(String movie, String phonenumber, String datetime) {
         Show show = getAShow(movie, datetime);
+        System.out.println(Arrays.toString(patron));
         if (show != null) {
             for (int i = 0; i < patronsize; i++) {
                 if ((phonenumber).equals(patron[i].getPhoneNumber())) {
