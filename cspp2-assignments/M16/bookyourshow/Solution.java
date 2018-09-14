@@ -271,8 +271,8 @@ class BookYourShow {
      */
     public void printTicket(final String movie, final String datetime,
      final String phonenumber) {
-        Show shoe = getAShow(movie, datetime);
-        if (show != null) {
+        Show shows = getAShow(movie, datetime);
+        if (shows != null) {
             for (int i = 0; i < patronsize; i++) {
                 if ((phonenumber).equals(patron[i].getPhoneNumber())) {
                     System.out.println(phonenumber + " " + movie
