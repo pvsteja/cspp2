@@ -87,7 +87,6 @@ class BookYourShow {
         for (int i = 0; i < showSize; i++) {
             if (show[i].getMovie().equals(movie)
                 && show[i].getDateTime().equals(datetime)) {
-                System.out.println("Inside");
                 return show[i];
             }
         }
@@ -100,8 +99,8 @@ class BookYourShow {
         if (availableshow != null) {
             String[] seat = availableshow.getSeats();
             String[] bookedseats = p.getBookedSeats();
-            for (int i = 0; i <= seat.length; i++) {
-                for (int  j = 0; j <= bookedseats.length; j++) {
+            for (int i = 0; i < seat.length; i++) {
+                for (int  j = 0; j < bookedseats.length; j++) {
                     if (seat[i].equals(bookedseats[j])
                         && !seat[i].equals("N/A")) {
                         seat[i] = "N/A";
