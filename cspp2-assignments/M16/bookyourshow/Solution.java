@@ -1,12 +1,24 @@
 import java.util.Arrays;
 import java.util.Scanner;
-/**.
- * Class for show.
+/**
+ * . Class for show.
  */
 class Show {
+    /**
+     * { var_description }
+     */
     private String movie;
+    /**
+     * { var_description }
+     */
     private String datetime;
+    /**
+     * { var_description }
+     */
     private String[] seats;
+    /**
+     * { var_description }
+     */
     private String[] bookedseats;
 
     /**.
@@ -21,7 +33,7 @@ class Show {
         this.datetime = datetime;
         this.seats = seats;
     }
-    /**
+    /**.
      * Gets the movie.
      *
      * @return     The movie.
@@ -58,12 +70,21 @@ class Show {
     }
 }
 
-/**
+/**.
  * Class for patron.
  */
 class Patron {
+    /**
+     * { var_description }
+     */
     private String name;
+    /**
+     * { var_description }
+     */
     private String phonenumber;
+    /**
+     * { var_description }
+     */
     private String[] bookedseats;
 
     /**.
@@ -117,10 +138,25 @@ class Patron {
  * Class for book your show.
  */
 class BookYourShow {
+    /**
+     * { var_description }
+     */
     private int showSize;
+    /**
+     * { var_description }
+     */
     private int patronsize;
+    /**
+     * { var_description }
+     */
     private Show[] show;
+    /**
+     * { var_description }
+     */
     private Patron[] patron;
+    /**.
+     * Constructs the object.
+     */
     BookYourShow() {
         this.showSize = 0;
         this.patronsize = 0;
@@ -205,7 +241,7 @@ class BookYourShow {
             System.out.println("No show");
         }
     }
-    /**
+    /**.
      * Shows all.
      */
     public void showAll() {
@@ -213,7 +249,7 @@ class BookYourShow {
             System.out.println(show[i]);
         }
     }
-    /**
+    /**.
      * { function_description }
      *
      * @param      movie        The movie
