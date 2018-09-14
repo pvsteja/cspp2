@@ -161,7 +161,7 @@ public static void main(final String[] args) {
                     seats[j] = tokens[k++];
                 }
                 bys.bookAShow(check[1], tokens[1],
-                    new Patron(tokens[2], tokens[2 + 1], seats));
+                    new Patron(tokens[2], tokens[2 + 1], seats) );
             break;
 
             case "get":
