@@ -255,6 +255,7 @@ class BookYourShow {
      * @param      datetime     The datetime
      */
     public void printTicket(final String movie, final String phonenumber, final String datetime) {
+        System.out.println(Arrays.toString(show));
         Show show = getAShow(movie, datetime);
         System.out.println(Arrays.toString(patron));
         if (show != null) {
