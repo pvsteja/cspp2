@@ -23,9 +23,9 @@ class Show {
     /**.
      * Constructs the object.
      *
-     * @param      movie     The movie
-     * @param      datetime  The datetime
-     * @param      seats     The seats
+     * @param      mavie     The movie
+     * @param      datatime  The datetime
+     * @param      seets     The seats
      */
     public Show(final String mavie, final String datatime, final String[] seets) {
         this.movie = mavie;
@@ -56,6 +56,11 @@ class Show {
     public String[] getSeats() {
         return seats;
     }
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public String toStringWithoutTickets() {
         String s = "";
         s += movie + "," + datetime;
@@ -93,9 +98,9 @@ class Patron {
     /**.
      * Constructs the object.
      *
-     * @param      name         The name
-     * @param      phonenumber  The phonenumber
-     * @param      bookedseats  The bookedseats
+     * @param      naame         The name
+     * @param      phoanenumber  The phonenumber
+     * @param      bookeedseats  The bookedseats
      */
     Patron(final String naame, final String phoanenumber, final String[] bookeedseats) {
         this.name = naame;
