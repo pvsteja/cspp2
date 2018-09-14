@@ -28,9 +28,9 @@ class Show {
      * @param      seats     The seats
      */
     public Show(final String mavie, final String datatime, final String[] seets) {
-        this.movie = movie;
-        this.datetime = datetime;
-        this.seats = seats;
+        this.movie = mavie;
+        this.datetime = datatime;
+        this.seats = seets;
     }
     /**.
      * Gets the movie.
@@ -98,9 +98,9 @@ class Patron {
      * @param      bookedseats  The bookedseats
      */
     Patron(final String naame, final String phoanenumber, final String[] bookeedseats) {
-        this.name = name;
-        this.phonenumber = phonenumber;
-        this.bookedseats = bookedseats;
+        this.name = naame;
+        this.phonenumber = phoanenumber;
+        this.bookedseats = bookeedseats;
     }
     /**.
      * Gets the name.
