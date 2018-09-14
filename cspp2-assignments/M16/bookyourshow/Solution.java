@@ -165,13 +165,13 @@ class BookYourShow {
      * Shows the resize.
      */
     public void showResize() {
-        show = Arrays.copyOf(show, show.length * 2);
+        show = Arrays.copyOf(show, showSize * 2);
     }
     /**.
      * { function_description }
      */
     public void patronResize() {
-        patron = Arrays.copyOf(patron, patron.length * 2);
+        patron = Arrays.copyOf(patron, patronsize * 2);
     }
     /**.
      * Adds a show.
@@ -254,10 +254,8 @@ class BookYourShow {
      * @param      phonenumber  The phonenumber
      * @param      datetime     The datetime
      */
-    public void printTicket(final String movie, final String phonenumber, final String datetime) {
-        System.out.println(Arrays.toString(show));
+    public void printTicket(final String movie, final String datetime, final String phonenumber) {
         Show show = getAShow(movie, datetime);
-        System.out.println(Arrays.toString(patron));
         if (show != null) {
             for (int i = 0; i < patronsize; i++) {
                 if ((phonenumber).equals(patron[i].getPhoneNumber())) {
