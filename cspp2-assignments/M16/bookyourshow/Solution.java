@@ -22,8 +22,8 @@ class Show {
     }
     public String toString() {
         String s = "";
-        s += movie + "," + datetime;
-        s += Arrays.toString(seats);
+        s += movie + "," + datetime + ",";
+        s += Arrays.toString(seats).replace(", ",",");
         return s;
     }
 }
