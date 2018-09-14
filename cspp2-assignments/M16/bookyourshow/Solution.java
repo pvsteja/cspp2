@@ -4,7 +4,7 @@ import java.util.Scanner;
  * . Class for show.
  */
 class Show {
-    /**
+    /**.
      * { var_description }
      */
     private String movie;
@@ -27,7 +27,7 @@ class Show {
      * @param      datetime  The datetime
      * @param      seats     The seats
      */
-    public Show(final String movie, final String datetime, final String[] seats) {
+    public Show(final String mavie, final String datatime, final String[] seets) {
         this.movie = movie;
         this.datetime = datetime;
         this.seats = seats;
@@ -97,7 +97,7 @@ class Patron {
      * @param      phonenumber  The phonenumber
      * @param      bookedseats  The bookedseats
      */
-    Patron(final String name, final String phonenumber, final String[] bookedseats) {
+    Patron(final String naame, final String phoanenumber, final String[] bookeedseats) {
         this.name = name;
         this.phonenumber = phonenumber;
         this.bookedseats = bookedseats;
@@ -225,7 +225,7 @@ class BookYourShow {
      * @param      p         { parameter_description }
      */
     public void bookAShow(final String movie, final String datetime,
-     Patron p) {
+     final Patron p) {
         addAPatron(p);
         Show availableshow = getAShow(movie, datetime);
         if (availableshow != null) {
@@ -240,7 +240,7 @@ class BookYourShow {
                 }
 
             }
-        }else {
+        } else {
             System.out.println("No show");
         }
     }
@@ -314,7 +314,7 @@ public static void main(final String[] args) {
                     seats[j] = tokens[k++];
                 }
                 bys.bookAShow(check[1], tokens[1],
-                    new Patron(tokens[2], tokens[2 + 1], seats) );
+                    new Patron(tokens[2], tokens[2 + 1], seats));
             break;
 
             case "get":
