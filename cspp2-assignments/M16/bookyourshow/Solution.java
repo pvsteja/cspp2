@@ -74,7 +74,7 @@ class Show {
     public String toString() {
         String s = "";
         s += movie + "," + datetime + ",";
-        s += Arrays.toString(seats).replace(", ",",");
+        s += Arrays.toString(seats).replace(", ", ",");
         return s;
     }
 }
@@ -162,14 +162,18 @@ class BookYourShow {
      * { var_description }
      */
     private Patron[] patron;
+    /**
+     * { var_description }
+     */
+    private static final int TEN = 10;
     /**.
      * Constructs the object.
      */
     BookYourShow() {
         this.showSize = 0;
         this.patronsize = 0;
-        this.show = new Show[10];
-        this.patron = new Patron[10];
+        this.show = new Show[TEN];
+        this.patron = new Patron[TEN];
     }
     /**.
      * Shows the resize.
@@ -264,12 +268,14 @@ class BookYourShow {
      * @param      phonenumber  The phonenumber
      * @param      datetime     The datetime
      */
-    public void printTicket(final String movie, final String datetime, final String phonenumber) {
+    public void printTicket(final String movie, final String datetime,
+     final String phonenumber) {
         Show show = getAShow(movie, datetime);
         if (show != null) {
             for (int i = 0; i < patronsize; i++) {
                 if ((phonenumber).equals(patron[i].getPhoneNumber())) {
-                    System.out.println(phonenumber + " " + movie + " " + datetime);
+                    System.out.println(phonenumber + " " + movie +
+                     " " + datetime);
                     return;
                 }
             }
