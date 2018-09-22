@@ -5,6 +5,33 @@ import java.util.Arrays;
   * write your code below this comment
   */
 class Todoist {
+    /**
+    * Array of tasks.
+    */
+    private Task[] tasks;
+    /**
+    * size of the array.
+    */
+    private int size;
+
+    /**
+    * Constructs the object.
+    */
+    Todoist() {
+        final int max = 100;
+        tasks = new Task[max];
+        size = 0;
+    }
+
+    public int totalTime4Completion() {
+        int time = 0;
+        for (int i = 0; i < size; i++) {
+            if (tasks[i].getStatus().equals("todo")) {
+                time += tasks[i].gettimeToComplete();
+      }
+    }
+    return time;
+  }
 
 }
 class Task {
