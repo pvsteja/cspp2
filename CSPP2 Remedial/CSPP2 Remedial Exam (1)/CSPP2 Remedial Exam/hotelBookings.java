@@ -7,8 +7,8 @@ public class hotelBookings {
 
 	public hotelBookings(){
 		size = 0;
-		reservations = new Reservation[5];
-		check = new int[5];
+		reservations = new Reservation[6];
+		check = new int[6];
 
 	}
 	// public boolean isEmpty(int roomNum) {
