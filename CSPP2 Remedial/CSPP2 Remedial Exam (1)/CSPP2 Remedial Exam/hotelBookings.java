@@ -23,16 +23,25 @@ public class hotelBookings {
 		}
 		if (size == reservations.length) {
 		 	System.out.println("All rooms are reserved");
+	 		return -1;
 		}
-	 	return -1;
-
+		else {
+		 	reservations[count] = r;
+		 	++size;
+			r.setRoom(count + 1);
+		}
+		return ++count;
 	}
 
 	public Boolean reserveRoom(String person, int roomNum) {
-		for (int i = 0; i < count; i++) {
-
-		}
-		return true;
+		Reservation r = new Reservation(person,roomNum);
+		// for (int i = 0; i < reservations.length; i++) {
+			if (reservations[roomNum - 1] == null) {
+				reservations[roomNum - 1] = r;
+				return true;
+			}
+		// }
+		return false;
 	}
 
 	public void printReservations() {

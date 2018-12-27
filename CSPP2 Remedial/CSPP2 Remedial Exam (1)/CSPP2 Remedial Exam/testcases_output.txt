@@ -14,7 +14,9 @@ rajiv 5
 Your Output: 
 rehana 1
 karan 3
+murthy 2
 rajiv 5
+kalyani 3
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -35,6 +37,9 @@ Your Output:
 kiran 2
 murthy 1
 rajiv 1
+kalyani 2
+kumar 3
+swathi 4
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -56,6 +61,9 @@ Your Output:
 kiran 2
 murthy 1
 rajiv 1
+kalyani 2
+kumar 3
+swathi 4
 alekhya 5
 ----------------------------------------
 
@@ -77,8 +85,9 @@ swathi 5
 Your Output: 
 kiran 2
 murthy 1
-rajiv 2
 kalyani 1
+kumar 2
+swathi 3
 alekhya 5
 ----------------------------------------
 
@@ -104,10 +113,13 @@ manasa 7
 Your Output: 
 kiran 2
 murthy 1
-rajiv 2
 kalyani 1
+kumar 2
+swathi 3
 Added 2 more rooms
-alekhya 6
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+	at hotelBookings.reserveRoom(hotelBookings.java:39)
+	at Solution.main(Solution.java:42)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -152,7 +164,9 @@ murthy 1
 kumar 1
 kumar 3
 Added 5 more rooms
-alekhya 6
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+	at hotelBookings.reserveRoom(hotelBookings.java:39)
+	at Solution.main(Solution.java:42)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -188,11 +202,14 @@ kumar 7
 Your Output: 
 kiran 2
 murthy 1
-rajiv 2
 kalyani 1
+kumar 2
+swathi 3
 kumar now has no reservations.
 Added 2 more rooms
-alekhya 6
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+	at hotelBookings.reserveRoom(hotelBookings.java:39)
+	at Solution.main(Solution.java:42)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -234,10 +251,13 @@ reddy 10
 Your Output: 
 kiran 2
 murthy 1
-rajiv 2
 kalyani 1
+kumar 2
+kumar 3
 kumar now has no reservations.
 Added 5 more rooms
-alekhya 6
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+	at hotelBookings.reserveRoom(hotelBookings.java:39)
+	at Solution.main(Solution.java:42)
 ----------------------------------------
 
