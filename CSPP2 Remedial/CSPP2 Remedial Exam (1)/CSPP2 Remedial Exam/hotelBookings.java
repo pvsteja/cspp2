@@ -19,7 +19,7 @@ public class hotelBookings {
 		// System.out.println(count);
 		// System.out.println(reservations[count]);
 
-		if (size == reservations.length) {
+		if (size == reservations.length - 1) {
 		 	System.out.println("All rooms are reserved");
 	 		return -1;
 		}
@@ -39,7 +39,7 @@ public class hotelBookings {
 	public Boolean reserveRoom(String person, int roomNum) {
 		Reservation rN = new Reservation(person);
 		// for (int i = 0; i < reservations.length; i++) {
-		if (size == reservations.length && roomNum > size) {
+		if (size == reservations.length) {
 		 	System.out.println("All rooms are reserved");
 		}
 		if (reservations[roomNum] == null) {
