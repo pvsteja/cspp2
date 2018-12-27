@@ -161,7 +161,6 @@ Your Output:
 kiran 2
 murthy 1
 kumar 2
-kumar 3
 
 
 

@@ -18,7 +18,7 @@ public class hotelBookings {
 		Reservation r = new Reservation(person);
 		if(size == 0) {
 			reservations[count] = r;
-		 	++size;
+		 	size++;
 		 	count++;
 		 	r.setRoom(count);
 
@@ -30,14 +30,14 @@ public class hotelBookings {
 		else {
 		 	for (int j = 0; j < check.length; j++) {
 		 		if (count == check[j]) {
-		 			reservations[count] = r;
+		 			reservations[count + 1] = r;
 
 		 		}
 		 		else {
 		 			reservations[count] = r;
 		 		}
 		 	}
-		 	++size;
+		 	size++;
 		 	count++;
 			r.setRoom(count);
 		}
