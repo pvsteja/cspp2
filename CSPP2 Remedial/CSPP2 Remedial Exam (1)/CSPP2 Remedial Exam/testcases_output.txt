@@ -117,7 +117,7 @@ kumar 3
 swathi 4
 Added 2 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
-	at hotelBookings.reserveRoom(hotelBookings.java:54)
+	at hotelBookings.reserveRoom(hotelBookings.java:39)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 
@@ -161,12 +161,13 @@ Your Output:
 kiran 2
 murthy 1
 kumar 2
+kumar 3
 
 
 
 Added 5 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
-	at hotelBookings.reserveRoom(hotelBookings.java:54)
+	at hotelBookings.reserveRoom(hotelBookings.java:39)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 
@@ -217,7 +218,7 @@ kumar now has no reservations.
 
 Added 2 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
-	at hotelBookings.reserveRoom(hotelBookings.java:54)
+	at hotelBookings.reserveRoom(hotelBookings.java:39)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 
@@ -274,7 +275,7 @@ kumar now has no reservations.
 
 Added 5 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
-	at hotelBookings.reserveRoom(hotelBookings.java:54)
+	at hotelBookings.reserveRoom(hotelBookings.java:39)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 
