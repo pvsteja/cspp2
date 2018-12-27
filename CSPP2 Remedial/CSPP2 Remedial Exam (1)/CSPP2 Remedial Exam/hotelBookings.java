@@ -2,10 +2,12 @@ public class hotelBookings {
 	int size;
 	Reservation[] reservations;
 	int count=0;
+	int[] check;
 
 	public hotelBookings(){
 		size = 0;
 		reservations = new Reservation[5];
+		check = new int[5];
 
 	}
 	// public boolean isEmpty(int roomNum) {
@@ -16,8 +18,9 @@ public class hotelBookings {
 		if(size == 0) {
 			reservations[count] = r;
 		 	++size;
-		 	r.setRoom(count + 1);
-			return ++count;
+		 	count++;
+		 	r.setRoom(count);
+
 		}
 		if (size == reservations.length) {
 		 	System.out.println("All rooms are reserved");
@@ -26,26 +29,31 @@ public class hotelBookings {
 		else {
 		 	reservations[count] = r;
 		 	++size;
-			r.setRoom(count + 1);
+		 	count++;
+			r.setRoom(count);
 		}
-		return ++count;
+		return count;
 	}
 
 	public Boolean reserveRoom(String person, int roomNum) {
 		Reservation r = new Reservation(person,roomNum);
+		int i = 0;
+		check[i] = roomNum;
 		// for (int i = 0; i < reservations.length; i++) {
 			if (reservations[roomNum - 1] == null) {
 				reservations[roomNum - 1] = r;
+				i++;
 				return true;
 			}
 		// }
+			i++;
 		return false;
 	}
 
 	public void printReservations() {
 		for (int i = 0; i < reservations.length; i++) {
 			if (reservations[i] != null) {
-				System.out.println( " " );
+				System.out.println("");
 			}
 		}
 
