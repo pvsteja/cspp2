@@ -29,9 +29,10 @@ public class hotelBookings {
 		 	reservations[count] = r;
 		 	++size;
 			r.setRoom(count + 1);
-		}
-		else {
+			return ++count;
+		}else {
 			count += 1;
+			reserveRoom(person);
 		}
 		return ++count;
 	}
