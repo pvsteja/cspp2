@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class hotelBookings {
 	int size;
 	Reservation[] reservations;
@@ -28,6 +29,12 @@ public class hotelBookings {
 		}
 		else {
 		 	reservations[count] = r;
+		 	for (int j = 0; j < check.length; j++) {
+		 		if (count == check[j]) {
+
+		 		}
+		 	}
+
 		 	++size;
 		 	count++;
 			r.setRoom(count);
@@ -39,6 +46,8 @@ public class hotelBookings {
 		Reservation r = new Reservation(person,roomNum);
 		int i = 0;
 		check[i] = roomNum;
+		Arrays.sort(check);
+
 		// for (int i = 0; i < reservations.length; i++) {
 			if (reservations[roomNum - 1] == null) {
 				reservations[roomNum - 1] = r;
