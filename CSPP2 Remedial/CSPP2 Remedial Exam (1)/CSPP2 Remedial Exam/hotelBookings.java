@@ -32,9 +32,12 @@ public class hotelBookings {
 			return ++count;
 		}else {
 			count += 1;
-			reserveRoom(person);
+			// reserveRoom(person);
+			reservations[count] = r;
+		 	++size;
+		 	r.setRoom(count + 1);
+			return ++count;
 		}
-		return ++count;
 	}
 
 	public Boolean reserveRoom(String person, int roomNum) {
