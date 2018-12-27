@@ -25,10 +25,13 @@ public class hotelBookings {
 		 	System.out.println("All rooms are reserved");
 	 		return -1;
 		}
-		else {
+		else if(reservations[count] == null){
 		 	reservations[count] = r;
 		 	++size;
 			r.setRoom(count + 1);
+		}
+		else {
+			count += 1;
 		}
 		return ++count;
 	}
