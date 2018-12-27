@@ -20,6 +20,7 @@ kalyani 3
 Reservation@2f7a2457
 Reservation@566776ad
 Reservation@6108b2d7
+Reservation@1554909b
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -96,7 +97,6 @@ swathi 5
 Your Output: 
 kiran 2
 murthy 1
-rajiv 2
 kalyani 1
 kumar 2
 swathi 3
@@ -128,13 +128,12 @@ manasa 7
 Your Output: 
 kiran 2
 murthy 1
-rajiv 2
 kalyani 1
 kumar 2
 swathi 3
 Added 2 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at hotelBookings.reserveRoom(hotelBookings.java:38)
+	at hotelBookings.reserveRoom(hotelBookings.java:39)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 
@@ -180,9 +179,12 @@ murthy 1
 kumar 1
 kumar 3
 Reservation@2f7a2457
+Reservation@566776ad
+Reservation@6108b2d7
+Reservation@1554909b
 Added 5 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at hotelBookings.reserveRoom(hotelBookings.java:38)
+	at hotelBookings.reserveRoom(hotelBookings.java:39)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 
@@ -219,7 +221,6 @@ kumar 7
 Your Output: 
 kiran 2
 murthy 1
-rajiv 2
 kalyani 1
 kumar 2
 swathi 3
@@ -232,7 +233,7 @@ Reservation@566776ad
 Reservation@6108b2d7
 Added 2 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at hotelBookings.reserveRoom(hotelBookings.java:38)
+	at hotelBookings.reserveRoom(hotelBookings.java:39)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 
@@ -275,7 +276,6 @@ reddy 10
 Your Output: 
 kiran 2
 murthy 1
-rajiv 2
 kalyani 1
 kumar 2
 kumar 3
@@ -288,7 +288,7 @@ Reservation@566776ad
 Reservation@6108b2d7
 Added 5 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at hotelBookings.reserveRoom(hotelBookings.java:38)
+	at hotelBookings.reserveRoom(hotelBookings.java:39)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 

@@ -34,8 +34,13 @@ public class hotelBookings {
 	}
 
 	public Boolean reserveRoom(String person, int roomNum) {
+		Reservation rN = new Reservation(person);
 		// for (int i = 0; i < reservations.length; i++) {
 			if (reservations[roomNum] == null) {
+				reservations[roomNum] = rN;
+		 		++size;
+		 		rN.setRoom(count + 1);
+
 				return true;
 			}
 		// }
