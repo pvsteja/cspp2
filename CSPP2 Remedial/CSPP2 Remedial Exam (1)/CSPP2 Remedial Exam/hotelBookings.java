@@ -13,40 +13,37 @@ public class hotelBookings {
 		return true;
 	}
 
+
 	public int reserveRoom(String person) {
 		Reservation r = new Reservation(person);
-		if(size == 0) {
-			reservations[count] = r;
-		 	++size;
-		 	r.setRoom(count + 1);
-			return ++count;
-		}
+		// System.out.println(count);
+		// System.out.println(reservations[count]);
+
 		if (size == reservations.length) {
 		 	System.out.println("All rooms are reserved");
 	 		return -1;
 		}
 		else if(reservations[count] == null){
+			// System.out.println("Check null");
 		 	reservations[count] = r;
 		 	++size;
 			r.setRoom(count + 1);
 			return ++count;
 		}else {
-			count += 1;
-			// reserveRoom(person);
-			reservations[count] = r;
-		 	++size;
-		 	r.setRoom(count + 1);
-			return ++count;
+			++count;
+			reserveRoom(person);
 		}
+		return count;
 	}
 
 	public Boolean reserveRoom(String person, int roomNum) {
 		Reservation rN = new Reservation(person);
 		// for (int i = 0; i < reservations.length; i++) {
 			if (reservations[roomNum] == null) {
-				reservations[roomNum] = rN;
+
+				reservations[roomNum - 1] = rN;
 		 		++size;
-		 		rN.setRoom(count + 1);
+		 		rN.setRoom(roomNum);
 
 				return true;
 			}

@@ -38,6 +38,11 @@ public class Reservation{
     }
 
 
+    public String toString() {
+    	return name + " " + roomNumber;
+    }
+
+
 }
 
 
