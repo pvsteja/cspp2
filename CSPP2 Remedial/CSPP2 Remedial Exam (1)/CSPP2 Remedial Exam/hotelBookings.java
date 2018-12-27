@@ -37,18 +37,18 @@ public class hotelBookings {
 	}
 
 	public Boolean reserveRoom(String person, int roomNum) {
-		// Reservation rN = new Reservation(person);
-		// // for (int i = 0; i < reservations.length; i++) {
-		// if (size == reservations.length ) {
-		//  	System.out.println("All rooms are reserved");
+		Reservation rN = new Reservation(person);
+		// for (int i = 0; i < reservations.length; i++) {
+		if (size == reservations.length ) {
+		 	System.out.println("All rooms are reserved");
+		}
+		if (reservations[roomNum] == null) {
+			reservations[roomNum - 1] = rN;
+		 	++size;
+		 	rN.setRoom(roomNum);
+			return true;
+		}
 		// }
-		// if (reservations[roomNum] == null) {
-		// 	reservations[roomNum - 1] = rN;
-		//  	++size;
-		//  	rN.setRoom(roomNum);
-		// 	return true;
-		// }
-		// // }
 		return false;
 	}
 
