@@ -5,7 +5,7 @@ public class hotelBookings {
 
 	public hotelBookings(){
 		size = 0;
-		reservations = new Reservation[5];
+		reservations = new Reservation[6];
 
 	}
 

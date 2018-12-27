@@ -15,9 +15,11 @@ Your Output:
 rehana 1
 karan 3
 murthy 2
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
-	at hotelBookings.reserveRoom(hotelBookings.java:38)
-	at Solution.main(Solution.java:42)
+rajiv 5
+kalyani 3
+Reservation@2f7a2457
+Reservation@566776ad
+Reservation@6108b2d7
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -69,9 +71,11 @@ rajiv 1
 kalyani 2
 kumar 3
 swathi 4
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
-	at hotelBookings.reserveRoom(hotelBookings.java:38)
-	at Solution.main(Solution.java:42)
+alekhya 5
+Reservation@2f7a2457
+Reservation@566776ad
+Reservation@6108b2d7
+Reservation@1554909b
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -96,9 +100,10 @@ rajiv 2
 kalyani 1
 kumar 2
 swathi 3
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
-	at hotelBookings.reserveRoom(hotelBookings.java:38)
-	at Solution.main(Solution.java:42)
+alekhya 5
+Reservation@2f7a2457
+Reservation@566776ad
+Reservation@6108b2d7
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
