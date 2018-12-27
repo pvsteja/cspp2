@@ -26,7 +26,7 @@ public class hotelBookings {
 		else if(reservations[count] == null){
 			// System.out.println("Check null");
 		 	reservations[count] = r;
-		 	++size;
+		 	size++;
 			r.setRoom(count + 1);
 			return ++count;
 		}else {
@@ -39,12 +39,12 @@ public class hotelBookings {
 	public Boolean reserveRoom(String person, int roomNum) {
 		Reservation rN = new Reservation(person);
 		// for (int i = 0; i < reservations.length; i++) {
-		if (size == reservations.length) {
+		if (size == reservations.length-1) {
 		 	System.out.println("All rooms are reserved");
 		}
 		if (reservations[roomNum] == null) {
-			reservations[roomNum - 1] = rN;
-		 	++size;
+			reservations[roomNum ] = rN;
+		 	size++;
 		 	rN.setRoom(roomNum);
 			return true;
 		}
