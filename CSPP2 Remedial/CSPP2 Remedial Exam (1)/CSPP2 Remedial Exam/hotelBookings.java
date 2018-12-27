@@ -9,9 +9,9 @@ public class hotelBookings {
 
 	}
 
-	public boolean isEmpty(int roomNum) {
-		return true;
-	}
+	// public boolean isEmpty(int roomNum) {
+	// 	return true;
+	// }
 
 
 	public int reserveRoom(String person) {
@@ -39,14 +39,15 @@ public class hotelBookings {
 	public Boolean reserveRoom(String person, int roomNum) {
 		Reservation rN = new Reservation(person);
 		// for (int i = 0; i < reservations.length; i++) {
-			if (reservations[roomNum] == null) {
-
-				reservations[roomNum - 1] = rN;
-		 		++size;
-		 		rN.setRoom(roomNum);
-
-				return true;
-			}
+		if (size == reservations.length) {
+		 	System.out.println("All rooms are reserved");
+		}
+		if (reservations[roomNum] == null) {
+			reservations[roomNum - 1] = rN;
+		 	++size;
+		 	rN.setRoom(roomNum);
+			return true;
+		}
 		// }
 		return false;
 	}

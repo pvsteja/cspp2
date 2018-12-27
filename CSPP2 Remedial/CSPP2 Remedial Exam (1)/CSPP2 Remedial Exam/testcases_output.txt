@@ -136,7 +136,7 @@ kumar 3
 swathi 4
 Added 2 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at hotelBookings.reserveRoom(hotelBookings.java:42)
+	at hotelBookings.reserveRoom(hotelBookings.java:45)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 
@@ -185,7 +185,7 @@ kiran 2
 kumar 3
 Added 5 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at hotelBookings.reserveRoom(hotelBookings.java:42)
+	at hotelBookings.reserveRoom(hotelBookings.java:45)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 
@@ -236,7 +236,7 @@ kumar 3
 swathi 4
 Added 2 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at hotelBookings.reserveRoom(hotelBookings.java:42)
+	at hotelBookings.reserveRoom(hotelBookings.java:45)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 
@@ -293,7 +293,7 @@ kumar 3
 kumar 4
 Added 5 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at hotelBookings.reserveRoom(hotelBookings.java:42)
+	at hotelBookings.reserveRoom(hotelBookings.java:45)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 
