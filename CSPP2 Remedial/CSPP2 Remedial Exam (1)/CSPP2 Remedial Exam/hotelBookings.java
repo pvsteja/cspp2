@@ -28,13 +28,15 @@ public class hotelBookings {
 	 		return -1;
 		}
 		else {
-		 	reservations[count] = r;
 		 	for (int j = 0; j < check.length; j++) {
 		 		if (count == check[j]) {
+		 			reservations[count + 1] = r;
 
 		 		}
+		 		else {
+		 			reservations[count] = r;
+		 		}
 		 	}
-
 		 	++size;
 		 	count++;
 			r.setRoom(count);
