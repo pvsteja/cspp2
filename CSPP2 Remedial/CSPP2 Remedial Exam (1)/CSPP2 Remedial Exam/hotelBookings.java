@@ -8,11 +8,9 @@ public class hotelBookings {
 		reservations = new Reservation[5];
 
 	}
-
-	public boolean isEmpty(int roomNum) {
-		return true;
-	}
-
+	// public boolean isEmpty(int roomNum) {
+	// 	return true;
+	// }
 	public int reserveRoom(String person) {
 		Reservation r = new Reservation(person);
 		if(size == 0) {
@@ -45,6 +43,11 @@ public class hotelBookings {
 	}
 
 	public void printReservations() {
+		for (int i = 0; i < reservations.length; i++) {
+			if (reservations[i] != null) {
+				System.out.println( " " );
+			}
+		}
 
 	}
 	public void cancelReservations(String person) {
