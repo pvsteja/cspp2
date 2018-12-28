@@ -49,7 +49,7 @@ public class hotelBookings {
 	}
 	public void cancelReservations(String person) {
 		int roomIndex;
-		for (roomIndex = 0; roomIndex < reservations.length; roomIndex++) {
+		for (roomIndex = 0; roomIndex < size; roomIndex++) {
 			if (reservations[roomIndex].getPerson().equals(person)) {
 				reservations[roomIndex] = null;
 			}
