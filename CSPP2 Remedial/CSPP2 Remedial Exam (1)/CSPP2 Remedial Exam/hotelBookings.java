@@ -52,6 +52,7 @@ public class hotelBookings {
 		for (roomIndex = 0; roomIndex < size; roomIndex++) {
 			if (reservations[roomIndex].getPerson().equals(person)) {
 				reservations[roomIndex] = null;
+				size--;
 			}
 		}
 	}
