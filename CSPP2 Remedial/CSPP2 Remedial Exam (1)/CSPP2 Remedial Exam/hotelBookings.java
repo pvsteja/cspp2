@@ -10,7 +10,7 @@ public class hotelBookings {
 
 	public int reserveRoom(String person) {
 		int roomIndex;
-		if (size == reservations.length) {
+		if (size == reservations.length - 1) {
 		 	System.out.println("All Rooms are reserved");
 	 		return -1;
 		}
@@ -25,7 +25,7 @@ public class hotelBookings {
 	}
 
 	public Boolean reserveRoom(String person, int roomNum) {
-		if (size == reservations.length) {
+		if (size == reservations.length - 1) {
 		 	System.out.println("All Rooms are reserved");
 	 		return false;
 		}
