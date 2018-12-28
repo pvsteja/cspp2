@@ -1,60 +1,42 @@
 public class hotelBookings {
 	int size;
 	Reservation[] reservations;
-	int count=0;
 
 	public hotelBookings(){
 		size = 0;
 		reservations = new Reservation[6];
-
 	}
-
-	public boolean isEmpty(int roomNum) {
-		return true;
-	}
-
 
 	public int reserveRoom(String person) {
-		Reservation r = new Reservation(person);
-		System.out.println(count);
-		System.out.println(reservations[count]);
-
 		if (size == reservations.length) {
 		 	System.out.println("All rooms are reserved");
 	 		return -1;
+		} else {
+			int roomIndex;
+			for (roomIndex = 1; roomIndex < reservations.length; roomIndex++) {
+				if (reservations[roomIndex] == null) {
+					reservations[roomIndex] = new Reservation(person, roomIndex);
+					size++;
+					break;
+				}
+			}
+			return roomIndex;
 		}
-		else if(reservations[count] == null){
-			// System.out.println("Check null");
-		 	reservations[count] = r;
-		 	++size;
-			r.setRoom(count + 1);
-			return ++count;
-		}else {
-			++count;
-			reserveRoom(person);
-		}
-		return 0;
+
 	}
 
 	public Boolean reserveRoom(String person, int roomNum) {
-		Reservation rN = new Reservation(person);
-		// for (int i = 0; i < reservations.length; i++) {
-			if (reservations[roomNum] == null) {
-
-				reservations[roomNum - 1] = rN;
-		 		++size;
-		 		rN.setRoom(roomNum);
-
-				return true;
-			}
-		// }
+		if (reservations[roomNum] == null) {
+			reservations[roomNum] = new Reservation(person, roomNum);
+			return true;
+		}
 		return false;
 	}
 
 	public void printReservations() {
-		for (int i = 0; i < 5; i++) {
+		for (int i = 1; i < reservations.length; i++) {
 			if (reservations[i] != null) {
-				// System.out.println(reservations[i]);
+				System.out.println(reservations[i]);
 			}
 		}
 	}
