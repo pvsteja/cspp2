@@ -10,7 +10,7 @@ public class hotelBookings {
 	public int reserveRoom(String person) {
 		int roomIndex;
 		if (size == reservations.length - 1) {
-		 	System.out.println("All rooms are reserved");
+		 	System.out.println("All Rooms are reserved");
 	 		return -1;
 		}
 		for (roomIndex = 1; roomIndex < reservations.length; roomIndex++) {
@@ -18,8 +18,6 @@ public class hotelBookings {
 					reservations[roomIndex] = new Reservation(person, roomIndex);
 					size++;
 					break;
-				} else {
-
 				}
 			}
 			return roomIndex;
@@ -27,6 +25,7 @@ public class hotelBookings {
 
 	public Boolean reserveRoom(String person, int roomNum) {
 		if (reservations[roomNum] == null) {
+			size++;
 			reservations[roomNum] = new Reservation(person, roomNum);
 			return true;
 		}
