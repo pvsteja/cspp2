@@ -24,6 +24,7 @@ public class hotelBookings {
 			}
 			if (roomIndex == 6) {
 				System.out.println("All Rooms are reserved");
+				return -1;
 			}
 			return roomIndex;
 	}
