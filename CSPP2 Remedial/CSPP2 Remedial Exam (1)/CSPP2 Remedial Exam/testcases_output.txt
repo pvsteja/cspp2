@@ -1,4 +1,4 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 rehana 1
 karan 3
@@ -12,16 +12,19 @@ kalyani 4
 rajiv 5
 
 Your Output: 
+0
+null
 rehana 1
 karan 3
+1
+null
 murthy 2
 rajiv 5
-kalyani 4
-rehana 1
-murthy 2
+2
 karan 3
-kalyani 4
-rajiv 5
+3
+null
+kalyani 0
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -40,14 +43,19 @@ kumar 5
 
 Your Output: 
 kiran 2
+0
+null
 rajiv 1
-kalyani 3
-kumar 4
-swathi 5
-rajiv 1
+1
 kiran 2
-kalyani 3
+2
+null
+kalyani 0
+3
+null
 kumar 4
+4
+null
 swathi 5
 ----------------------------------------
 
@@ -68,15 +76,20 @@ kumar 5
 
 Your Output: 
 kiran 2
+0
+null
 rajiv 1
-kalyani 3
-kumar 4
-swathi 5
-alekhya 5
-rajiv 1
+1
 kiran 2
-kalyani 3
+2
+null
+kalyani 0
+3
+null
 kumar 4
+4
+null
+swathi 5
 alekhya 5
 ----------------------------------------
 
@@ -98,13 +111,16 @@ swathi 5
 Your Output: 
 kiran 2
 rajiv 2
+0
+null
 kalyani 1
-kumar 3
-swathi 4
-alekhya 5
-kalyani 1
+1
 rajiv 2
-kumar 3
+2
+null
+kumar 0
+3
+null
 swathi 4
 alekhya 5
 ----------------------------------------
@@ -131,12 +147,20 @@ manasa 7
 Your Output: 
 kiran 2
 rajiv 2
+0
+null
 kalyani 1
-kumar 3
+1
+rajiv 2
+2
+null
+kumar 0
+3
+null
 swathi 4
 Added 2 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at hotelBookings.reserveRoom(hotelBookings.java:45)
+	at hotelBookings.reserveRoom(hotelBookings.java:42)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 
@@ -178,14 +202,13 @@ reddy 10
 
 Your Output: 
 kiran 2
+0
+null
 kumar 1
-kumar 3
-kumar 1
-kiran 2
 kumar 3
 Added 5 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at hotelBookings.reserveRoom(hotelBookings.java:45)
+	at hotelBookings.reserveRoom(hotelBookings.java:42)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 
@@ -222,21 +245,21 @@ kumar 7
 Your Output: 
 kiran 2
 rajiv 2
+0
+null
 kalyani 1
-kumar 3
-swathi 4
-kalyani 1
+1
 rajiv 2
-kumar 3
+2
+null
+kumar 0
+3
+null
 swathi 4
 kumar now has no reservations.
-kalyani 1
-rajiv 2
-kumar 3
-swathi 4
 Added 2 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at hotelBookings.reserveRoom(hotelBookings.java:45)
+	at hotelBookings.reserveRoom(hotelBookings.java:42)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 
@@ -279,21 +302,21 @@ reddy 10
 Your Output: 
 kiran 2
 rajiv 2
+0
+null
 kalyani 1
-kumar 3
-kumar 4
-kalyani 1
+1
 rajiv 2
-kumar 3
+2
+null
+kumar 0
+3
+null
 kumar 4
 kumar now has no reservations.
-kalyani 1
-rajiv 2
-kumar 3
-kumar 4
 Added 5 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at hotelBookings.reserveRoom(hotelBookings.java:45)
+	at hotelBookings.reserveRoom(hotelBookings.java:42)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 
