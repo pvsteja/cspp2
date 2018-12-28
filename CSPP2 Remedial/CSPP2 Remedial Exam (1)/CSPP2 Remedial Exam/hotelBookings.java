@@ -28,6 +28,9 @@ public class hotelBookings {
 		 	System.out.println("All Rooms are reserved");
 	 		return false;
 		}
+		if (reservations[roomNum] != null) {
+			System.out.println("Room is already reserved");
+		}
 		if (reservations[roomNum] == null) {
 			size++;
 			reservations[roomNum] = new Reservation(person, roomNum);
