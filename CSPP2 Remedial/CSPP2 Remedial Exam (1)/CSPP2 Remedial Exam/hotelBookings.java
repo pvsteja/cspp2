@@ -4,7 +4,7 @@ public class hotelBookings {
 	Reservation[] reservations;
 
 	public hotelBookings(){
-		size = 0;
+		size = 1;
 		reservations = new Reservation[6];
 	}
 

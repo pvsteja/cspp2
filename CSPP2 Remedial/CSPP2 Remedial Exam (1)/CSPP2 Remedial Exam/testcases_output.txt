@@ -1,4 +1,4 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 rehana 1
 karan 3
@@ -16,15 +16,14 @@ rehana 1
 karan 3
 murthy 2
 rajiv 5
-kalyani 4
+All Rooms are reserved
 rehana 1
 murthy 2
 karan 3
-kalyani 4
 rajiv 5
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -43,16 +42,15 @@ kiran 2
 murthy 1
 rajiv 3
 kalyani 4
-kumar 5
+All Rooms are reserved
 All Rooms are reserved
 murthy 1
 kiran 2
 rajiv 3
 kalyani 4
-kumar 5
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -72,17 +70,16 @@ kiran 2
 murthy 1
 rajiv 3
 kalyani 4
-kumar 5
+All Rooms are reserved
 All Rooms are reserved
 All Rooms are reserved
 murthy 1
 kiran 2
 rajiv 3
 kalyani 4
-kumar 5
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -103,13 +100,12 @@ murthy 1
 Room is already reserved
 kalyani 3
 kumar 4
-swathi 5
+All Rooms are reserved
 All Rooms are reserved
 murthy 1
 kiran 2
 kalyani 3
 kumar 4
-swathi 5
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -137,7 +133,7 @@ murthy 1
 Room is already reserved
 kalyani 3
 kumar 4
-swathi 5
+All Rooms are reserved
 Added 2 more rooms
 alekhya 6
 All Rooms are reserved
@@ -145,7 +141,6 @@ murthy 1
 kiran 2
 kalyani 3
 kumar 4
-swathi 5
 alekhya 6
 ----------------------------------------
 
@@ -245,12 +240,11 @@ murthy 1
 Room is already reserved
 kalyani 3
 kumar 4
-swathi 5
+All Rooms are reserved
 murthy 1
 kiran 2
 kalyani 3
 kumar 4
-swathi 5
 Exception in thread "main" java.lang.NullPointerException
 	at hotelBookings.cancelReservations(hotelBookings.java:53)
 	at Solution.main(Solution.java:55)
@@ -298,12 +292,11 @@ murthy 1
 Room is already reserved
 kalyani 3
 kumar 4
-kumar 5
+All Rooms are reserved
 murthy 1
 kiran 2
 kalyani 3
 kumar 4
-kumar 5
 Exception in thread "main" java.lang.NullPointerException
 	at hotelBookings.cancelReservations(hotelBookings.java:53)
 	at Solution.main(Solution.java:55)
