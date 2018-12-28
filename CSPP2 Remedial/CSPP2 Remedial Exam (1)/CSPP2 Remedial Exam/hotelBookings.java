@@ -33,8 +33,8 @@ public class hotelBookings {
 			System.out.println("Room is already reserved");
 		}
 		if (reservations[roomNum] == null) {
-			size++;
 			reservations[roomNum] = new Reservation(person, roomNum);
+			size++;
 			return true;
 		}
 		return false;
