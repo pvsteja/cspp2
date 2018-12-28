@@ -33,10 +33,12 @@ public class Reservation{
     }
 
     //accessors, return the room number or name
-    public int getRoomNumber(){
+    public int getRoomNumber() {
     	return roomNumber;
     }
-
+    public String getPerson() {
+        return name;
+    }
 
     public String toString() {
     	return name + " " + roomNumber;

@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class hotelBookings {
 	int size;
 	Reservation[] reservations;
@@ -47,9 +48,15 @@ public class hotelBookings {
 		}
 	}
 	public void cancelReservations(String person) {
-
+		int roomIndex;
+		for (roomIndex = 1; roomIndex < reservations.length; roomIndex++) {
+			if (reservations[roomIndex].getPerson().equals(person)) {
+				reservations[roomIndex] = null;
+			}
+		}
 	}
 	public boolean buildRooms(int num) {
 		return true;
 	}
+
 }
