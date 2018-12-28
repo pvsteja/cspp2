@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 rehana 1
 karan 3
@@ -16,14 +16,15 @@ rehana 1
 karan 3
 murthy 2
 rajiv 5
-All Rooms are reserved
+kalyani 4
 rehana 1
 murthy 2
 karan 3
+kalyani 4
 rajiv 5
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -42,15 +43,16 @@ kiran 2
 murthy 1
 rajiv 3
 kalyani 4
-All Rooms are reserved
+kumar 5
 All Rooms are reserved
 murthy 1
 kiran 2
 rajiv 3
 kalyani 4
+kumar 5
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -70,16 +72,17 @@ kiran 2
 murthy 1
 rajiv 3
 kalyani 4
-All Rooms are reserved
+kumar 5
 All Rooms are reserved
 All Rooms are reserved
 murthy 1
 kiran 2
 rajiv 3
 kalyani 4
+kumar 5
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -100,15 +103,16 @@ murthy 1
 Room is already reserved
 kalyani 3
 kumar 4
-All Rooms are reserved
+swathi 5
 All Rooms are reserved
 murthy 1
 kiran 2
 kalyani 3
 kumar 4
+swathi 5
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -133,15 +137,17 @@ murthy 1
 Room is already reserved
 kalyani 3
 kumar 4
-All Rooms are reserved
+swathi 5
 Added 2 more rooms
 alekhya 6
-All Rooms are reserved
+manasa 7
 murthy 1
 kiran 2
 kalyani 3
 kumar 4
+swathi 5
 alekhya 6
+manasa 7
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -193,7 +199,7 @@ alekhya 6
 manasa 4
 kumar 5
 karthik 7
-All Rooms are reserved
+manohar 8
 All Rooms are reserved
 murthy 1
 kiran 2
@@ -202,6 +208,7 @@ manasa 4
 kumar 5
 alekhya 6
 karthik 7
+manohar 8
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -240,11 +247,12 @@ murthy 1
 Room is already reserved
 kalyani 3
 kumar 4
-All Rooms are reserved
+swathi 5
 murthy 1
 kiran 2
 kalyani 3
 kumar 4
+swathi 5
 Exception in thread "main" java.lang.NullPointerException
 	at hotelBookings.cancelReservations(hotelBookings.java:53)
 	at Solution.main(Solution.java:55)
@@ -292,11 +300,12 @@ murthy 1
 Room is already reserved
 kalyani 3
 kumar 4
-All Rooms are reserved
+kumar 5
 murthy 1
 kiran 2
 kalyani 3
 kumar 4
+kumar 5
 Exception in thread "main" java.lang.NullPointerException
 	at hotelBookings.cancelReservations(hotelBookings.java:53)
 	at Solution.main(Solution.java:55)
