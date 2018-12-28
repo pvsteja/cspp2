@@ -25,7 +25,7 @@ public class hotelBookings {
 			if (roomIndex == 6) {
 				System.out.println("All Rooms are reserved");
 			}
-			return roomIndex - 1;
+			return roomIndex;
 	}
 
 	public Boolean reserveRoom(String person, int roomNum) {
