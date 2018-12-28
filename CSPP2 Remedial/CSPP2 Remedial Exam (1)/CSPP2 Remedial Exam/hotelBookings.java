@@ -9,10 +9,10 @@ public class hotelBookings {
 
 	public int reserveRoom(String person) {
 		int roomIndex;
-		// if (size == reservations.length - 1) {
-		//  	System.out.println("All rooms are reserved");
-	 // 		return -1;
-		// }
+		if (size == reservations.length - 1) {
+		 	System.out.println("All rooms are reserved");
+	 		return -1;
+		}
 		for (roomIndex = 1; roomIndex < reservations.length; roomIndex++) {
 				if (reservations[roomIndex] == null) {
 					reservations[roomIndex] = new Reservation(person, roomIndex);
@@ -21,10 +21,6 @@ public class hotelBookings {
 				} else {
 
 				}
-			}
-			if (roomIndex == 6) {
-				System.out.println("All Rooms are reserved");
-				return -1;
 			}
 			return roomIndex;
 	}
