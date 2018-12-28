@@ -1,4 +1,4 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 rehana 1
 karan 3
@@ -12,11 +12,11 @@ kalyani 4
 rajiv 5
 
 Your Output: 
-rehana 1
+rehana 0
 karan 3
-murthy 2
+murthy 1
 rajiv 5
-kalyani 4
+kalyani 3
 rehana 1
 murthy 2
 karan 3
@@ -41,11 +41,11 @@ kumar 5
 Your Output: 
 kiran 2
 murthy 1
-rajiv 3
-kalyani 4
-kumar 5
+rajiv 2
+kalyani 3
+kumar 4
 All Rooms are reserved
-swathi 6
+swathi 5
 murthy 1
 kiran 2
 rajiv 3
@@ -71,11 +71,11 @@ kumar 5
 Your Output: 
 kiran 2
 murthy 1
-rajiv 3
-kalyani 4
-kumar 5
+rajiv 2
+kalyani 3
+kumar 4
 All Rooms are reserved
-swathi 6
+swathi 5
 murthy 1
 kiran 2
 rajiv 3
@@ -101,9 +101,9 @@ swathi 5
 Your Output: 
 kiran 2
 murthy 1
-kalyani 3
-kumar 4
-swathi 5
+kalyani 2
+kumar 3
+swathi 4
 murthy 1
 kiran 2
 kalyani 3
@@ -133,9 +133,9 @@ manasa 7
 Your Output: 
 kiran 2
 murthy 1
-kalyani 3
-kumar 4
-swathi 5
+kalyani 2
+kumar 3
+swathi 4
 Added 2 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
 	at hotelBookings.reserveRoom(hotelBookings.java:32)
@@ -181,7 +181,7 @@ reddy 10
 Your Output: 
 kiran 2
 murthy 1
-kumar 3
+kumar 2
 murthy 1
 kiran 2
 kumar 3
@@ -224,9 +224,9 @@ kumar 7
 Your Output: 
 kiran 2
 murthy 1
-kalyani 3
-kumar 4
-swathi 5
+kalyani 2
+kumar 3
+swathi 4
 murthy 1
 kiran 2
 kalyani 3
@@ -283,9 +283,9 @@ reddy 10
 Your Output: 
 kiran 2
 murthy 1
-kalyani 3
+kalyani 2
+kumar 3
 kumar 4
-kumar 5
 murthy 1
 kiran 2
 kalyani 3
