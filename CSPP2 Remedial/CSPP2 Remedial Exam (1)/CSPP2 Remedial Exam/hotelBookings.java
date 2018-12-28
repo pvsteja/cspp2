@@ -8,7 +8,7 @@ public class hotelBookings {
 	}
 
 	public int reserveRoom(String person) {
-		if (size == reservations.length) {
+		if (size == reservations.length - 1) {
 		 	System.out.println("All rooms are reserved");
 	 		return -1;
 		} else {
