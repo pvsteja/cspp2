@@ -52,7 +52,7 @@ kalyani 4
 kumar 5
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -73,6 +73,7 @@ murthy 1
 rajiv 3
 kalyani 4
 kumar 5
+All Rooms are reserved
 All Rooms are reserved
 murthy 1
 kiran 2
@@ -102,6 +103,7 @@ murthy 1
 kalyani 3
 kumar 4
 swathi 5
+All Rooms are reserved
 murthy 1
 kiran 2
 kalyani 3
@@ -135,9 +137,13 @@ kalyani 3
 kumar 4
 swathi 5
 Added 2 more rooms
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at hotelBookings.reserveRoom(hotelBookings.java:27)
-	at Solution.main(Solution.java:42)
+All Rooms are reserved
+All Rooms are reserved
+murthy 1
+kiran 2
+kalyani 3
+kumar 4
+swathi 5
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -185,7 +191,7 @@ kiran 2
 kumar 3
 Added 5 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at hotelBookings.reserveRoom(hotelBookings.java:27)
+	at hotelBookings.reserveRoom(hotelBookings.java:31)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 
@@ -237,9 +243,14 @@ kalyani 3
 kumar 4
 swathi 5
 Added 2 more rooms
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at hotelBookings.reserveRoom(hotelBookings.java:27)
-	at Solution.main(Solution.java:42)
+All Rooms are reserved
+All Rooms are reserved
+All Rooms are reserved
+murthy 1
+kiran 2
+kalyani 3
+kumar 4
+swathi 5
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -296,8 +307,17 @@ kalyani 3
 kumar 4
 kumar 5
 Added 5 more rooms
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at hotelBookings.reserveRoom(hotelBookings.java:27)
-	at Solution.main(Solution.java:42)
+All Rooms are reserved
+All Rooms are reserved
+All Rooms are reserved
+All Rooms are reserved
+All Rooms are reserved
+All Rooms are reserved
+All Rooms are reserved
+murthy 1
+kiran 2
+kalyani 3
+kumar 4
+kumar 5
 ----------------------------------------
 
