@@ -8,21 +8,24 @@ public class hotelBookings {
 	}
 
 	public int reserveRoom(String person) {
-		if (size == reservations.length - 1) {
-		 	System.out.println("All rooms are reserved");
-	 		return -1;
-		} else {
-			int roomIndex;
-			for (roomIndex = 1; roomIndex < reservations.length; roomIndex++) {
+		int roomIndex;
+		// if (size == reservations.length - 1) {
+		//  	System.out.println("All rooms are reserved");
+	 // 		return -1;
+		// }
+		for (roomIndex = 1; roomIndex < reservations.length; roomIndex++) {
 				if (reservations[roomIndex] == null) {
 					reservations[roomIndex] = new Reservation(person, roomIndex);
 					size++;
 					break;
+				} else {
+
 				}
 			}
+			if (roomIndex == 6) {
+				System.out.println("All Rooms are reserved");
+			}
 			return roomIndex;
-		}
-
 	}
 
 	public Boolean reserveRoom(String person, int roomNum) {
