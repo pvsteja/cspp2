@@ -139,13 +139,14 @@ kalyani 3
 kumar 4
 swathi 5
 Added 2 more rooms
-All Rooms are reserved
+alekhya 6
 All Rooms are reserved
 murthy 1
 kiran 2
 kalyani 3
 kumar 4
 swathi 5
+alekhya 6
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -193,9 +194,19 @@ murthy 1
 kiran 2
 kumar 3
 Added 5 more rooms
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at hotelBookings.reserveRoom(hotelBookings.java:32)
-	at Solution.main(Solution.java:42)
+alekhya 6
+manasa 4
+kumar 5
+karthik 7
+All Rooms are reserved
+All Rooms are reserved
+murthy 1
+kiran 2
+kumar 3
+manasa 4
+kumar 5
+alekhya 6
+karthik 7
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -246,13 +257,14 @@ kiran 2
 kalyani 3
 swathi 5
 Added 2 more rooms
-All Rooms are reserved
+alekhya 6
 All Rooms are reserved
 All Rooms are reserved
 murthy 1
 kiran 2
 kalyani 3
 swathi 5
+alekhya 6
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -308,15 +320,19 @@ murthy 1
 kiran 2
 kalyani 3
 Added 5 more rooms
-All Rooms are reserved
-All Rooms are reserved
-All Rooms are reserved
-All Rooms are reserved
+alekhya 6
+manasa 4
+kumar 5
+karthik 7
 All Rooms are reserved
 All Rooms are reserved
 All Rooms are reserved
 murthy 1
 kiran 2
 kalyani 3
+manasa 4
+kumar 5
+alekhya 6
+karthik 7
 ----------------------------------------
 

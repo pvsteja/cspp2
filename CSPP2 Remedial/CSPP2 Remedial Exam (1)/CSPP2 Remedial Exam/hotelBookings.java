@@ -56,6 +56,9 @@ public class hotelBookings {
 		}
 	}
 	public boolean buildRooms(int num) {
+		Reservation[] temp = new Reservation[size + num];
+		System.arraycopy(reservations, 0, temp, 0, reservations.length);
+		reservations = temp;
 		return true;
 	}
 
