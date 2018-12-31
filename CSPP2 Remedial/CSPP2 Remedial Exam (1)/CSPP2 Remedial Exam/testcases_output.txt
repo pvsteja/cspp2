@@ -1,4 +1,4 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 rehana 1
 karan 3
@@ -12,19 +12,12 @@ kalyani 4
 rajiv 5
 
 Your Output: 
-rehana 1
-karan 3
-murthy 2
-rajiv 5
-kalyani 4
-rehana 1
-murthy 2
-karan 3
-kalyani 4
-rajiv 5
+Error: Main method not found in class Reservation, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -39,20 +32,12 @@ kalyani 4
 kumar 5
 
 Your Output: 
-kiran 2
-murthy 1
-rajiv 3
-kalyani 4
-kumar 5
-All Rooms are reserved
-murthy 1
-kiran 2
-rajiv 3
-kalyani 4
-kumar 5
+Error: Main method not found in class Reservation, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -68,21 +53,12 @@ kalyani 4
 kumar 5
 
 Your Output: 
-kiran 2
-murthy 1
-rajiv 3
-kalyani 4
-kumar 5
-All Rooms are reserved
-All Rooms are reserved
-murthy 1
-kiran 2
-rajiv 3
-kalyani 4
-kumar 5
+Error: Main method not found in class Reservation, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -98,21 +74,12 @@ kumar 4
 swathi 5
 
 Your Output: 
-kiran 2
-murthy 1
-Room is already reserved
-kalyani 3
-kumar 4
-swathi 5
-All Rooms are reserved
-murthy 1
-kiran 2
-kalyani 3
-kumar 4
-swathi 5
+Error: Main method not found in class Reservation, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
 ----------------------------------------
 
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -132,22 +99,9 @@ alekhya 6
 manasa 7
 
 Your Output: 
-kiran 2
-murthy 1
-Room is already reserved
-kalyani 3
-kumar 4
-swathi 5
-Added 2 more rooms
-alekhya 6
-manasa 7
-murthy 1
-kiran 2
-kalyani 3
-kumar 4
-swathi 5
-alekhya 6
-manasa 7
+Error: Main method not found in class Reservation, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -187,32 +141,12 @@ swetha 9
 reddy 10
 
 Your Output: 
-kiran 2
-murthy 1
-kumar 3
-Room is already reserved
-murthy 1
-kiran 2
-kumar 3
-Added 5 more rooms
-alekhya 6
-manasa 4
-kumar 5
-karthik 7
-manohar 8
-kumar 9
-murthy 1
-kiran 2
-kumar 3
-manasa 4
-kumar 5
-alekhya 6
-karthik 7
-manohar 8
-kumar 9
+Error: Main method not found in class Reservation, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
 ----------------------------------------
 
-########## Testcase 6: Passed ##########
+########## Testcase 6: Failed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -243,33 +177,9 @@ alekhya 6
 kumar 7
 
 Your Output: 
-kiran 2
-murthy 1
-Room is already reserved
-kalyani 3
-kumar 4
-swathi 5
-murthy 1
-kiran 2
-kalyani 3
-kumar 4
-swathi 5
-kumar now has no reservations.
-murthy 1
-kiran 2
-kalyani 3
-swathi 5
-Added 2 more rooms
-alekhya 6
-manasa 4
-kumar 7
-murthy 1
-kiran 2
-kalyani 3
-manasa 4
-swathi 5
-alekhya 6
-kumar 7
+Error: Main method not found in class Reservation, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -309,39 +219,8 @@ swetha 9
 reddy 10
 
 Your Output: 
-kiran 2
-murthy 1
-Room is already reserved
-kalyani 3
-kumar 4
-kumar 5
-murthy 1
-kiran 2
-kalyani 3
-kumar 4
-kumar 5
-kumar now has no reservations.
-murthy 1
-kiran 2
-kalyani 3
-kumar 5
-Added 5 more rooms
-alekhya 6
-manasa 4
-kumar 7
-karthik 8
-manohar 9
-swetha 10
-All Rooms are reserved
-murthy 1
-kiran 2
-kalyani 3
-manasa 4
-kumar 5
-alekhya 6
-kumar 7
-karthik 8
-manohar 9
-swetha 10
+Error: Main method not found in class Reservation, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
 ----------------------------------------
 
