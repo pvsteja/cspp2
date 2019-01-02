@@ -1,3 +1,4 @@
+import java.util.*;
 class Slot {
 	String name;
 	Slot(String name) {
