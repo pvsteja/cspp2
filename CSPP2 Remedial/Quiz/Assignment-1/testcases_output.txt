@@ -269,7 +269,7 @@ Quiz does not have questions
 |--------------|
 ----------------------------------------
 
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 |----------------|
 | Load Questions |
@@ -286,6 +286,7 @@ Your Output:
 |----------------|
 | Load Questions |
 |----------------|
+Error! Malformed question
 |------------|
 | Start Quiz |
 |------------|
@@ -311,7 +312,7 @@ Your Output:
 |----------------|
 | Load Questions |
 |----------------|
-Error! Correct answer choice number is out of range for6
+Error! Correct answer choice number is out of range forquestion text 1
 |------------|
 | Start Quiz |
 |------------|
@@ -427,7 +428,7 @@ Your Output:
 |--------------|
 ----------------------------------------
 
-########## Testcase 12: Failed ##########
+########## Testcase 12: Passed ##########
 Expected Output: 
 |----------------|
 | Load Questions |
@@ -444,6 +445,7 @@ Your Output:
 |----------------|
 | Load Questions |
 |----------------|
+Error! Malformed question
 |------------|
 | Start Quiz |
 |------------|

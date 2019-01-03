@@ -253,17 +253,19 @@ public final class Solution {
         		String[] answers = line.split(",");
         		if (answers.length >= 2) {
         			if (Integer.parseInt(a[2]) >= 1 && Integer.parseInt(a[2]) <= answers.length) {
-        				if (Integer.parseInt(a[3]) != 0) {
+        				if (Integer.parseInt(a[3]) > 0) {
         					if (Integer.parseInt(a[4]) < 0) {
 
         					}
         				}
         			} else {
-        				throw new Exception("Error! Correct answer choice number is out of range for" + a[2]);
+        				throw new Exception("Error! Correct answer choice number is out of range for" + a[0]);
         			}
         		} else {
         			throw new Exception(a[0] + " does not have enough answer choices ");
         		}
+        	} else {
+        		throw new Exception("Error! Malformed question");
         	}
         }
     }
