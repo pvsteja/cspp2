@@ -257,10 +257,10 @@ public final class Solution {
         					if (Integer.parseInt(a[4]) < 0) {
 
         					} else {
-        						throw new Exception("Invalid penalty for" + a[0]);
+        						throw new Exception("Invalid penalty for " + a[0]);
         					}
         				} else {
-        					throw new Exception("Invalid max marks for" + a[0]);
+        					throw new Exception("Invalid max marks for " + a[0]);
         				}
         			} else {
         				throw new Exception("Error! Correct answer choice number is out of range for" + a[0]);

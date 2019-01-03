@@ -204,7 +204,7 @@ Your Output:
 |----------------|
 | Load Questions |
 |----------------|
-Invalid penalty forquestion a
+Invalid penalty for question a
 |------------|
 | Start Quiz |
 |------------|
@@ -379,7 +379,7 @@ Your Output:
 |--------------|
 ----------------------------------------
 
-########## Testcase 10: Failed ##########
+########## Testcase 10: Passed ##########
 Expected Output: 
 |----------------|
 | Load Questions |
@@ -396,7 +396,7 @@ Your Output:
 |----------------|
 | Load Questions |
 |----------------|
-Invalid max marks forquestion about sony
+Invalid max marks for question about sony
 |------------|
 | Start Quiz |
 |------------|
@@ -405,7 +405,7 @@ Invalid max marks forquestion about sony
 |--------------|
 ----------------------------------------
 
-########## Testcase 11: Failed ##########
+########## Testcase 11: Passed ##########
 Expected Output: 
 |----------------|
 | Load Questions |
@@ -422,7 +422,7 @@ Your Output:
 |----------------|
 | Load Questions |
 |----------------|
-Invalid penalty forquestion about sony
+Invalid penalty for question about sony
 |------------|
 | Start Quiz |
 |------------|
