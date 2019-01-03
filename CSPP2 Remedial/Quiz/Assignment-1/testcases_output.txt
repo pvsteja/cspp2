@@ -204,6 +204,7 @@ Your Output:
 |----------------|
 | Load Questions |
 |----------------|
+Invalid penalty forquestion a
 |------------|
 | Start Quiz |
 |------------|
@@ -395,6 +396,7 @@ Your Output:
 |----------------|
 | Load Questions |
 |----------------|
+Invalid max marks forquestion about sony
 |------------|
 | Start Quiz |
 |------------|
@@ -420,6 +422,7 @@ Your Output:
 |----------------|
 | Load Questions |
 |----------------|
+Invalid penalty forquestion about sony
 |------------|
 | Start Quiz |
 |------------|

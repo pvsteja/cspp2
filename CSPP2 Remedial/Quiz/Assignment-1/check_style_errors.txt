@@ -13,7 +13,9 @@ Starting audit...
 [ERROR] C:\Users\Teja\Desktop\MSIT\1st Year\CSPP-2\cspp2\CSPP2 Remedial\Quiz\Assignment-1\Solution.java:257: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] C:\Users\Teja\Desktop\MSIT\1st Year\CSPP-2\cspp2\CSPP2 Remedial\Quiz\Assignment-1\Solution.java:257:72: '4' is a magic number. [MagicNumber]
 [ERROR] C:\Users\Teja\Desktop\MSIT\1st Year\CSPP-2\cspp2\CSPP2 Remedial\Quiz\Assignment-1\Solution.java:257:81: Must have at least one statement. [EmptyBlock]
-[ERROR] C:\Users\Teja\Desktop\MSIT\1st Year\CSPP-2\cspp2\CSPP2 Remedial\Quiz\Assignment-1\Solution.java:262: Line is longer than 80 characters (found 126). [LineLength]
-[ERROR] C:\Users\Teja\Desktop\MSIT\1st Year\CSPP-2\cspp2\CSPP2 Remedial\Quiz\Assignment-1\Solution.java:265: Line is longer than 80 characters (found 100). [LineLength]
+[ERROR] C:\Users\Teja\Desktop\MSIT\1st Year\CSPP-2\cspp2\CSPP2 Remedial\Quiz\Assignment-1\Solution.java:260: Line is longer than 80 characters (found 106). [LineLength]
+[ERROR] C:\Users\Teja\Desktop\MSIT\1st Year\CSPP-2\cspp2\CSPP2 Remedial\Quiz\Assignment-1\Solution.java:263: Line is longer than 80 characters (found 100). [LineLength]
+[ERROR] C:\Users\Teja\Desktop\MSIT\1st Year\CSPP-2\cspp2\CSPP2 Remedial\Quiz\Assignment-1\Solution.java:266: Line is longer than 80 characters (found 126). [LineLength]
+[ERROR] C:\Users\Teja\Desktop\MSIT\1st Year\CSPP-2\cspp2\CSPP2 Remedial\Quiz\Assignment-1\Solution.java:269: Line is longer than 80 characters (found 100). [LineLength]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 18 errors.
