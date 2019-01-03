@@ -296,7 +296,7 @@ Error! Malformed question
 |--------------|
 ----------------------------------------
 
-########## Testcase 7: Failed ##########
+########## Testcase 7: Passed ##########
 Expected Output: 
 |----------------|
 | Load Questions |
@@ -313,7 +313,7 @@ Your Output:
 |----------------|
 | Load Questions |
 |----------------|
-Error! Correct answer choice number is out of range forquestion text 1
+Error! Correct answer choice number is out of range for question text 1
 |------------|
 | Start Quiz |
 |------------|

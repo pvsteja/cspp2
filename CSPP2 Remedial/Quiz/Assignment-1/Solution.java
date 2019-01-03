@@ -263,7 +263,7 @@ public final class Solution {
         					throw new Exception("Invalid max marks for " + a[0]);
         				}
         			} else {
-        				throw new Exception("Error! Correct answer choice number is out of range for" + a[0]);
+        				throw new Exception("Error! Correct answer choice number is out of range for " + a[0]);
         			}
         		} else {
         			throw new Exception(a[0] + " does not have enough answer choices ");
