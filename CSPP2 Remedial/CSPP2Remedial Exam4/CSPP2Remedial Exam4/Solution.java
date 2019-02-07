@@ -27,11 +27,6 @@ public class Solution {
 
 			}
 		}
-		// if(game.winner() != null) {
-		// 	System.out.println(game.winner().getName());
-		// }
-		// // }else {
-		// // 	System.out.println(game.);
-		// // }
+		game.winner();
 	}
 }
