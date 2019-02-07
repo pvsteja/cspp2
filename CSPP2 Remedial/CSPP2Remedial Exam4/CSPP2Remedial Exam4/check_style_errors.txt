@@ -59,6 +59,6 @@ Starting audit...
 [ERROR] C:\Users\Teja\Desktop\MSIT\1st Year\CSPP-2\cspp2\CSPP2 Remedial\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:11:37: Array brackets at illegal position. [ArrayTypeStyle]
 [ERROR] C:\Users\Teja\Desktop\MSIT\1st Year\CSPP-2\cspp2\CSPP2 Remedial\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:23:34: 'else' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\Teja\Desktop\MSIT\1st Year\CSPP-2\cspp2\CSPP2 Remedial\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:23:34: '}' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Teja\Desktop\MSIT\1st Year\CSPP-2\cspp2\CSPP2 Remedial\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:26:46: '6' is a magic number. [MagicNumber]
+[ERROR] C:\Users\Teja\Desktop\MSIT\1st Year\CSPP-2\cspp2\CSPP2 Remedial\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:27:46: '6' is a magic number. [MagicNumber]
 Audit done.
 Checkstyle ends with 11 errors.

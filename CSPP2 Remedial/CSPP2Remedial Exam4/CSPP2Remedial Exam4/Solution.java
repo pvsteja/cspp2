@@ -23,10 +23,10 @@ public class Solution {
 				}else {
 					totalScore += score;
 				}
+				game.getPlayer(index).addScore(totalScore);
 				if (score == 6) {
 					totalScore += score;
 				}
-				game.getPlayer(index).addScore(totalScore);
 
 			}
 		}
