@@ -20,13 +20,12 @@ public class Solution {
 				//Please complete the code to complete the game.
 				if (score == 1) {
 					totalScore += 0;
-				}else {
+
+				}else if (score == 6) {
 					totalScore += score;
 				}
 				game.getPlayer(index).addScore(totalScore);
-				if (score == 6) {
 					totalScore += score;
-				}
 
 			}
 		}
