@@ -13,8 +13,9 @@ class Game{
 	}
 	public void winner(){
 		for (int i = 0; i < player.length; i++) {
-			if (player[i].getScore() == 100) {
+			if (player[i].getScore() >= 100) {
 				System.out.println(player[i].getName());
+				break;
 			}
 		}
 	}
@@ -45,6 +46,9 @@ class Player{
 	}
 	public int getScore(){
 		return score;
+	}
+	public int addScore(int scr) {
+		return score += scr;
 	}
 	public String getName(){
 		return name;

@@ -10,7 +10,7 @@ public class Solution {
 		while (scan.hasNextLine()) {
 			String lines[] = scan.nextLine().split(" got ");
 			if (lines.length == 1) {
-				if (game.indexOf(lines[0]) == 0) {
+				if (game.indexOf(lines[0]) == -1) {
 					game.addPlayer(new Player(lines[0]));
 				}
 			}  else if (lines.length == 2) {
@@ -23,6 +23,8 @@ public class Solution {
 				}else {
 					totalScore += score;
 				}
+				game.getPlayer(index).addScore(totalScore);
+
 			}
 		}
 		game.winner();

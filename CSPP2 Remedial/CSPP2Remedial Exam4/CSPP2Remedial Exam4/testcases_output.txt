@@ -4,7 +4,7 @@ Alice
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Game.indexOf(Game.java:23)
+	at Game.indexOf(Game.java:24)
 	at Solution.main(Solution.java:13)
 ----------------------------------------
 
@@ -14,7 +14,7 @@ Mark
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Game.indexOf(Game.java:23)
+	at Game.indexOf(Game.java:24)
 	at Solution.main(Solution.java:13)
 ----------------------------------------
 
@@ -24,7 +24,7 @@ Bob
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Game.indexOf(Game.java:23)
+	at Game.indexOf(Game.java:24)
 	at Solution.main(Solution.java:13)
 ----------------------------------------
 
