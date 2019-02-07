@@ -22,11 +22,9 @@ class Game{
 		for (int i = 0; i <= player.length; i++) {
 			if (player[i].getName().equals(name)) {
 				return i;
-			}else {
-				return -1;
 			}
 		}
-		return 1;
+		return -1;
 	}
 }
 class Player{
