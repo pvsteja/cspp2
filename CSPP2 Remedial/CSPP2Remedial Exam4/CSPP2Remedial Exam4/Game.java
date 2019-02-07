@@ -26,6 +26,9 @@ class Game{
 		}
 		return -1;
 	}
+	public Player getPlayer(int index) {
+		return player[index];
+	}
 }
 class Player{
 	private String name;
