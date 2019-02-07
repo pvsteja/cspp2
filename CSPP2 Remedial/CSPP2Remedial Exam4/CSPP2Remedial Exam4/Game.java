@@ -19,7 +19,7 @@ class Game{
 		}
 	}
 	public int indexOf(String name){
-		for (int i = 0; i <= player.length; i++) {
+		for (int i = 0; i <= size; i++) {
 			if (player[i].getName().equals(name)) {
 				return i;
 			}
