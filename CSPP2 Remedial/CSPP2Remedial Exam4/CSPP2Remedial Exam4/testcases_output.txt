@@ -3,9 +3,9 @@ Expected Output:
 Alice
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Game.indexOf(Game.java:23)
-	at Solution.main(Solution.java:13)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
+	at Game.addPlayer(Game.java:10)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -13,9 +13,9 @@ Expected Output:
 Mark
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Game.indexOf(Game.java:23)
-	at Solution.main(Solution.java:13)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
+	at Game.addPlayer(Game.java:10)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -23,8 +23,8 @@ Expected Output:
 Bob
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Game.indexOf(Game.java:23)
-	at Solution.main(Solution.java:13)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at Game.addPlayer(Game.java:10)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
 
