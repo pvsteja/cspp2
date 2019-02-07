@@ -1,0 +1,30 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+Alice
+
+Your Output: 
+Exception in thread "main" java.lang.NullPointerException
+	at Game.indexOf(Game.java:23)
+	at Solution.main(Solution.java:13)
+----------------------------------------
+
+########## Testcase 1: Failed ##########
+Expected Output: 
+Mark
+
+Your Output: 
+Exception in thread "main" java.lang.NullPointerException
+	at Game.indexOf(Game.java:23)
+	at Solution.main(Solution.java:13)
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+Bob
+
+Your Output: 
+Exception in thread "main" java.lang.NullPointerException
+	at Game.indexOf(Game.java:23)
+	at Solution.main(Solution.java:13)
+----------------------------------------
+

@@ -1,0 +1,70 @@
+3
+Alice
+Alice got 2
+Alice got 5
+Alice got 5
+Alice got 6
+Bob
+Bob got 2
+Bob got 2
+Bob got 1
+Alice
+Alice got 3
+Alice got 6
+Bob
+Bob got 5
+Bob got 1
+Alice
+Alice got 6
+Mark
+Mark got 2
+Mark got 3
+Mark got 5
+Mark got 3
+Mark got 1
+Alice
+Alice got 5
+Alice got 4
+Alice got 2
+Alice got 1
+Bob
+Bob got 1
+Alice
+Alice got 5
+Alice got 2
+Alice got 1
+Bob
+Bob got 5
+Bob got 6
+Alice
+Alice got 6
+Bob
+Bob got 3
+Bob got 3
+Bob got 2
+Bob got 6
+Alice
+Alice got 3
+Alice got 2
+Alice got 3
+Alice got 4
+Alice got 3
+Alice got 3
+Alice got 1
+Bob
+Bob got 5
+Bob got 5
+Bob got 5
+Bob got 3
+Bob got 1
+Mark
+Mark got 2
+Mark got 3
+Mark got 5
+Mark got 5
+Mark got 2
+Mark got 3
+Mark got 5
+Mark got 5
+Mark got 4
+Mark got 6
