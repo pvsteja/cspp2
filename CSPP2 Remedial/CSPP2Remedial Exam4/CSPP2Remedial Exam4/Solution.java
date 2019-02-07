@@ -23,10 +23,18 @@ public class Solution {
 				}else {
 					totalScore += score;
 				}
+				if (score == 6) {
+					totalScore += score;
+				}
 				game.getPlayer(index).addScore(totalScore);
 
 			}
 		}
-		game.winner();
+		// if(game.winner() != null) {
+		// 	System.out.println(game.winner().getName());
+		// }
+		// // }else {
+		// // 	System.out.println(game.);
+		// // }
 	}
 }
