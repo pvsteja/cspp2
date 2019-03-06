@@ -19,10 +19,6 @@ public class Reservation{
 
     }
 
-    // public getdetails(int roomNum) {
-
-    // }
-
     //mutators, set the room number or name
     public void setRoom(int newroomNumber){
     	this.roomNumber = newroomNumber;

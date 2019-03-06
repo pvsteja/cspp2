@@ -1,4 +1,4 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 rehana 1
 karan 3
@@ -22,9 +22,10 @@ murthy 2
 karan 3
 kalyani 4
 rajiv 5
+6
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -50,9 +51,10 @@ kiran 2
 rajiv 3
 kalyani 4
 kumar 5
+7
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -80,9 +82,10 @@ kiran 2
 rajiv 3
 kalyani 4
 kumar 5
+8
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -110,28 +113,11 @@ kiran 2
 kalyani 3
 kumar 4
 swathi 5
+8
 ----------------------------------------
 
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
-kiran 2
-murthy 1
-Room is already reserved
-kalyani 3
-kumar 4
-swathi 5
-Added 2 more rooms
-alekhya 6
-manasa 7
-murthy 1
-kiran 2
-kalyani 3
-kumar 4
-swathi 5
-alekhya 6
-manasa 7
-
-Your Output: 
 kiran 2
 murthy 1
 Room is already reserved
@@ -148,6 +134,25 @@ kumar 4
 swathi 5
 alekhya 6
 manasa 7
+
+Your Output: 
+kiran 2
+murthy 1
+Room is already reserved
+kalyani 3
+kumar 4
+swathi 5
+Added 2 more rooms
+alekhya 6
+manasa 7
+murthy 1
+kiran 2
+kalyani 3
+kumar 4
+swathi 5
+alekhya 6
+manasa 7
+10
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -210,9 +215,10 @@ alekhya 6
 karthik 7
 manohar 8
 kumar 9
+13
 ----------------------------------------
 
-########## Testcase 6: Passed ##########
+########## Testcase 6: Failed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -270,9 +276,10 @@ manasa 4
 swathi 5
 alekhya 6
 kumar 7
+14
 ----------------------------------------
 
-########## Testcase 7: Passed ##########
+########## Testcase 7: Failed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -342,5 +349,6 @@ karthik 7
 manohar 8
 swetha 9
 reddy 10
+18
 ----------------------------------------
 
